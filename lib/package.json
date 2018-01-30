@@ -1,0 +1,20 @@
+{
+  "name": "laelia",
+  "version": "0.1.0",
+  "author": "Baseline Telematics",
+  "license": "ISC",
+  "description": "A React UI component library for internal use only",
+  "scripts": {
+    "postinstall": "babel-node ./src/scripts/move-files.js"
+  },
+  "peerDependencies": {
+    "fs-extra": "^5.0.0",
+    "lodash": "^4.17.4",
+    "radium": "^0.21.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "main": "./index.js",
+  "module": "./index.js",
+  "private": true
+}
