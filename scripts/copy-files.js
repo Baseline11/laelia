@@ -53,9 +53,6 @@ function createPackageFile() {
       author: author,
       license: license,
       description: description,
-      scripts: {
-        postinstall: 'babel-node ./src/scripts/move-files.js'
-      },
       peerDependencies: peerDependencies,
       main: './index.js',
       module: './index.js',

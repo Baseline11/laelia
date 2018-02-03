@@ -12,15 +12,16 @@ exports.default = {
   baseAction: _extends({}, _utils.fonts.baseText, {
     fontSize: 20,
     color: _utils.colors.white,
-    background: _utils.colors.cornflowerBlue,
+    background: _utils.colors.pictonBlue,
     borderRadius: 3,
     border: 0,
     outline: 0,
-    padding: '5px 10px',
+    padding: 5,
     display: 'inline-block',
+    height: 35,
     margin: '0',
     ':hover': {
-      background: _utils.colors.jordyBlue
+      cursor: 'pointer'
     }
   })
 };
