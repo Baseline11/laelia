@@ -13,7 +13,7 @@ exports.default = {
     background: _utils.colors.dustyGray
   },
   tableHeaderCell: _extends({}, _utils.fonts.baseText, {
-    color: 'white',
+    color: _utils.colors.white,
     textTransform: 'uppercase',
     padding: '0 10px',
     height: '55px',
