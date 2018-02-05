@@ -39,7 +39,7 @@ function generateCell(rowData, rowProperty, children) {
     return child.props.dataKey === rowProperty;
   })[0];
 
-  return _react2.default.createElement(tableCell.type, _extends({}, tableCell.props, {
+  return tableCell && _react2.default.createElement(tableCell.type, _extends({}, tableCell.props, {
     key: 'cellID-' + tableCell.key + '-' + rowData[rowProperty]
   }), tableCell.props.children ? tableCell.props.children : rowData[rowProperty]);
 }
