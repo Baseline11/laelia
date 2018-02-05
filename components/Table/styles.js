@@ -8,6 +8,7 @@ var _utils = require('../../utils');
 
 exports.default = {
   tableRow: {
-    borderBottom: '1px solid ' + _utils.colors.gray
+    background: _utils.colors.white,
+    borderBottom: '1px solid ' + _utils.colors.quillGray
   }
 };

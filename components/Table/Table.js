@@ -28,7 +28,7 @@ var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var getHeaderColumns = function getHeaderColumns(children) {
+var getHeaderColumnsFromData = function getHeaderColumnsFromData(children) {
   return children.map(function (column) {
     return column.props.dataKey;
   });
@@ -46,16 +46,17 @@ function generateCell(rowData, rowProperty, children) {
 
 function Table(_ref) {
   var data = _ref.data,
+      headerColumns = _ref.headerColumns,
       styleOverride = _ref.styleOverride,
       disableHeader = _ref.disableHeader,
       children = _ref.children;
 
-  var headerColumns = getHeaderColumns(children);
+  var getHeaderColumns = !disableHeader && headerColumns ? headerColumns : getHeaderColumnsFromData(children);
 
   return _react2.default.createElement(
     'table',
     { style: [styleOverride], cellPadding: '0', cellSpacing: '0' },
-    !disableHeader && _react2.default.createElement(_TableHeader2.default, { columns: headerColumns }),
+    !disableHeader && _react2.default.createElement(_TableHeader2.default, { columns: getHeaderColumns }),
     _react2.default.createElement(
       'tbody',
       null,
@@ -74,6 +75,7 @@ function Table(_ref) {
 
 Table.propTypes = {
   data: _propTypes2.default.array,
+  headerColumns: _propTypes2.default.array,
   styleOverride: _propTypes2.default.object,
   disableHeader: _propTypes2.default.bool,
   children: _propTypes2.default.array

@@ -10,7 +10,7 @@ var _utils = require('../../utils');
 
 exports.default = {
   tableHeaderRow: {
-    background: 'grey'
+    background: _utils.colors.dustyGray
   },
   tableHeaderCell: _extends({}, _utils.fonts.baseText, {
     color: 'white',
