@@ -55,7 +55,7 @@ function Table(_ref) {
 
   return _react2.default.createElement(
     'table',
-    { style: [styleOverride], cellPadding: '0', cellSpacing: '0' },
+    { style: [_styles2.default.table, styleOverride], cellPadding: '0', cellSpacing: '0' },
     !disableHeader && _react2.default.createElement(_TableHeader2.default, { columns: getHeaderColumns }),
     _react2.default.createElement(
       'tbody',

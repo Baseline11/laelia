@@ -11,7 +11,7 @@ var _utils = require('../../utils');
 exports.default = {
   tableRowCell: _extends({}, _utils.fonts.baseText, {
     fontSize: 11,
-    textAlign: 'center',
-    padding: 10
+    textAlign: 'left',
+    padding: '20px 10px'
   })
 };
