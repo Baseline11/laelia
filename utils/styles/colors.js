@@ -15,6 +15,7 @@ exports.default = {
   dustyGray: '#999',
   cornflowerBlue: '#6195ed',
   jordyBlue: '#8fb4f2',
+  sushi: '#8fc345',
   pictonBlue: '#1aadef',
   fadedRed: '#d7444a',
   sunglo: '#e06e73',
