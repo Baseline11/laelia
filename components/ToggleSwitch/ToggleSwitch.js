@@ -16,6 +16,8 @@ var _radium = require('radium');
 
 var _radium2 = _interopRequireDefault(_radium);
 
+var _lodash = require('lodash');
+
 var _styles = require('./styles');
 
 var _styles2 = _interopRequireDefault(_styles);
@@ -24,11 +26,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ToggleSwitch(_ref) {
   var active = _ref.active,
-      disabled = _ref.disabled;
+      disabled = _ref.disabled,
+      action = _ref.action;
+
+  var handleOnClick = !disabled ? action : (0, _lodash.noop)();
 
   return _react2.default.createElement(
     'div',
     {
+      onClick: handleOnClick,
       style: [_styles2.default.switchContainer, active && _styles2.default.switchContainerActive, disabled && _styles2.default.switchContainerDisabled]
     },
     _react2.default.createElement('span', {
@@ -39,7 +45,8 @@ function ToggleSwitch(_ref) {
 
 ToggleSwitch.propTypes = {
   active: _propTypes2.default.bool,
-  disabled: _propTypes2.default.bool
+  disabled: _propTypes2.default.bool,
+  action: _propTypes2.default.func
 };
 
 exports.default = (0, _radium2.default)(ToggleSwitch);
