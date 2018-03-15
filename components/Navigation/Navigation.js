@@ -108,6 +108,7 @@ var Navigation = function (_Component) {
       var _props = this.props,
           data = _props.data,
           isCollapsed = _props.isCollapsed,
+          logoUrl = _props.logoUrl,
           handleOnClose = _props.handleOnClose,
           classes = _props.classes;
 
@@ -125,7 +126,18 @@ var Navigation = function (_Component) {
             open: !isCollapsed,
             onClose: handleOnClose
           },
-          _react2.default.createElement('div', { className: (0, _classnames2.default)(classes.navigationHeader) }),
+          _react2.default.createElement(
+            'div',
+            { className: (0, _classnames2.default)(classes.navigationHeader) },
+            logoUrl && _react2.default.createElement(
+              'div',
+              { className: classes.navigationLogoWrapper },
+              _react2.default.createElement('img', {
+                className: (0, _classnames2.default)(classes.navigationLogo),
+                src: logoUrl
+              })
+            )
+          ),
           _react2.default.createElement(
             _List2.default,
             { component: 'nav' },
@@ -165,6 +177,7 @@ var Navigation = function (_Component) {
 Navigation.propTypes = {
   data: _propTypes2.default.array,
   isCollapsed: _propTypes2.default.bool,
+  logoUrl: _propTypes2.default.string,
   handleOnClose: _propTypes2.default.func.isRequired,
   classes: _propTypes2.default.object.isRequired
 };

@@ -26,7 +26,8 @@ var muiStyles = function muiStyles(theme) {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '0 8px'
+      padding: '0 8px',
+      background: _utils.colors.mineShaft
     }, theme.mixins.toolbar),
     navigationLogoWrapper: {
       width: '100%',
