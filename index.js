@@ -7,4 +7,6 @@ export {default as InfoBubble} from './components/InfoBubble';
 export {default as TextInput} from './components/TextInput';
 export {default as LanguageTabs} from './components/LanguageTabs';
 export {default as Select} from './components/Select';
+export {default as Navigation} from './components/Navigation';
+export {default as SvgIcon} from './components/SvgIcon';
 export {default as TileElement} from './components/TileElement';

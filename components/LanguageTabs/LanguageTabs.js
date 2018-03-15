@@ -31,11 +31,13 @@ function LanguageTabs(_ref) {
     'div',
     { style: _styles2.default.tabWrapper },
     languages.map(function (language, index) {
-      var selectedButton = selectedTab === language;
-
       return _react2.default.createElement(
         'button',
-        { key: 'button-' + index, onClick: handleOnClick, style: [_styles2.default.buttonLanguage, selectedButton && _styles2.default.buttonSelected] },
+        {
+          key: 'button-' + index,
+          onClick: handleOnClick,
+          style: [_styles2.default.buttonLanguage, selectedTab === language && _styles2.default.buttonSelected]
+        },
         language
       );
     })

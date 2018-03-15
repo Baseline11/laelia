@@ -5,23 +5,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
   black: '#000',
-  tundora: '#444',
   mineShaft: '#2c2c2c',
   darkGrey: '#3a3a3a',
-  doveGrey: '#6a6a6a',
+  tundora: '#444',
   greyishBrown: '#4c4c4c',
   scorpion: '#575757',
+  doveGrey: '#6a6a6a',
   gray: '#808080',
   dustyGray: '#999',
-  cornflowerBlue: '#6195ed',
-  jordyBlue: '#8fb4f2',
-  sushi: '#8fc345',
-  pictonBlue: '#1aadef',
-  fadedRed: '#d7444a',
-  sunglo: '#e06e73',
   silver: '#bbb',
   quillGray: '#dbdbd9',
   mercury: '#e6e6e6',
   lightGrey: '#f0f0f0',
-  white: '#fff'
+  white: '#fff',
+  cornflowerBlue: '#6195ed',
+  sushi: '#8fc345',
+  pictonBlue: '#1aadef',
+  fadedRed: '#d7444a',
+  sunglo: '#e06e73'
 };

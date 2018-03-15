@@ -28,6 +28,6 @@ exports.default = {
   },
   buttonSelected: {
     color: _utils.colors.pictonBlue,
-    borderColor: _utils.colors.pictonBlue
+    border: '1px solid ' + _utils.colors.pictonBlue
   }
 };
