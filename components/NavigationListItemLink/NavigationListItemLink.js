@@ -28,6 +28,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function NavigationListItemLink(_ref) {
   var text = _ref.text,
+      isSelected = _ref.isSelected,
       isNested = _ref.isNested,
       href = _ref.href,
       classes = _ref.classes,
@@ -35,15 +36,24 @@ function NavigationListItemLink(_ref) {
 
   return _react2.default.createElement(
     _List.ListItem,
-    { button: true, component: 'a', href: href, className: isNested && classes.nested },
+    {
+      button: true,
+      component: 'a',
+      href: href,
+      className: (0, _classnames2.default)(isNested && classes.nested, isSelected && classes.selected)
+    },
     children,
-    _react2.default.createElement(_List.ListItemText, { primary: text, classes: { primary: (0, _classnames2.default)(classes.navItem) } })
+    _react2.default.createElement(_List.ListItemText, {
+      primary: text,
+      classes: { primary: (0, _classnames2.default)(classes.navItem, isSelected && classes.navItemSelected) }
+    })
   );
 }
 
 NavigationListItemLink.propTypes = {
   text: _propTypes2.default.string.isRequired,
   isNested: _propTypes2.default.bool,
+  isSelected: _propTypes2.default.bool,
   href: _propTypes2.default.string.isRequired,
   classes: _propTypes2.default.object.isRequired,
   children: _propTypes2.default.object

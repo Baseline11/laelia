@@ -61,7 +61,7 @@ var NavigationListItemExpandable = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NavigationListItemExpandable.__proto__ || Object.getPrototypeOf(NavigationListItemExpandable)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      isCollapsed: true
+      isCollapsed: !_this.props.isSelected
     }, _this.handleClick = function () {
       _this.setState({ isCollapsed: !_this.state.isCollapsed });
     }, _temp), _possibleConstructorReturn(_this, _ret);
@@ -73,6 +73,7 @@ var NavigationListItemExpandable = function (_Component) {
       var _props = this.props,
           mainItemText = _props.mainItemText,
           mainItemIcon = _props.mainItemIcon,
+          isSelected = _props.isSelected,
           children = _props.children,
           classes = _props.classes;
       var isCollapsed = this.state.isCollapsed;
@@ -83,9 +84,12 @@ var NavigationListItemExpandable = function (_Component) {
         null,
         _react2.default.createElement(
           _List.ListItem,
-          { button: true, onClick: this.handleClick },
+          { button: true, onClick: this.handleClick, className: (0, _classnames2.default)(isSelected && classes.selected) },
           mainItemIcon && mainItemIcon,
-          _react2.default.createElement(_List.ListItemText, { primary: mainItemText, classes: { primary: (0, _classnames2.default)(classes.navItem) } }),
+          _react2.default.createElement(_List.ListItemText, {
+            primary: mainItemText,
+            classes: { primary: (0, _classnames2.default)(classes.navItem, isSelected && classes.navItemSelected) }
+          }),
           !isCollapsed ? _react2.default.createElement(_ExpandLess2.default, { className: classes.collapseIcon }) : _react2.default.createElement(_ExpandMore2.default, { className: classes.collapseIcon })
         ),
         _react2.default.createElement(
@@ -103,6 +107,7 @@ var NavigationListItemExpandable = function (_Component) {
 NavigationListItemExpandable.propTypes = {
   mainItemText: _propTypes2.default.string,
   mainItemIcon: _propTypes2.default.element,
+  isSelected: _propTypes2.default.bool,
   children: _propTypes2.default.array,
   classes: _propTypes2.default.object.isRequired
 };

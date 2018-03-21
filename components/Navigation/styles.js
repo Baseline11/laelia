@@ -13,6 +13,7 @@ var drawerWidth = 280;
 var muiStyles = function muiStyles(theme) {
   return {
     drawerPaper: {
+      background: _utils.colors.darkGrey,
       position: 'relative',
       width: drawerWidth,
       maxWidth: drawerWidth,

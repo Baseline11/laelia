@@ -14,6 +14,10 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _find = require('lodash/find');
+
+var _find2 = _interopRequireDefault(_find);
+
 var _Divider = require('material-ui/Divider');
 
 var _Divider2 = _interopRequireDefault(_Divider);
@@ -73,26 +77,30 @@ var Navigation = function (_Component) {
 
   _createClass(Navigation, [{
     key: 'generateNavigationListItemExpandable',
-    value: function generateNavigationListItemExpandable(data) {
+    value: function generateNavigationListItemExpandable(data, selectedItem) {
       return _react2.default.createElement(
         _NavigationListItemExpandable2.default,
         {
           key: 'nav-item-' + data.label,
+          isSelected: !!selectedItem,
           mainItemText: data.label,
           mainItemIcon: data.icon && _react2.default.createElement(
             _List.ListItemIcon,
             null,
-            _react2.default.createElement(_SvgIcon.SvgIcon, { icon: data.icon, fill: _utils.colors.lightGrey })
+            _react2.default.createElement(_SvgIcon.SvgIcon, { icon: data.icon, fill: !!selectedItem ? _utils.colors.lightGrey : _utils.colors.dustyGray })
           )
         },
         _react2.default.createElement(
           _List2.default,
           { component: 'div', disablePadding: true },
           data.children.map(function (item, index) {
+            var isSelected = selectedItem ? item.url === selectedItem.url : false;
+
             return _react2.default.createElement(_NavigationListItemLink2.default, {
               key: 'nav-subitem-' + index,
               text: item.label,
               href: item.url,
+              isSelected: isSelected,
               isNested: true
             });
           })
@@ -107,6 +115,7 @@ var Navigation = function (_Component) {
 
       var _props = this.props,
           data = _props.data,
+          activePage = _props.activePage,
           isCollapsed = _props.isCollapsed,
           logoUrl = _props.logoUrl,
           handleOnClose = _props.handleOnClose,
@@ -145,20 +154,23 @@ var Navigation = function (_Component) {
               var returnContent = void 0;
 
               if (item.children) {
-                returnContent = _this2.generateNavigationListItemExpandable(item);
+                var selectedIsNestedChild = activePage ? (0, _find2.default)(item.children, ['url', activePage.url]) : false;
+                returnContent = _this2.generateNavigationListItemExpandable(item, selectedIsNestedChild);
               } else {
+                var isSelected = activePage ? item.url === activePage.url : false;
                 returnContent = _react2.default.createElement(
                   _NavigationListItemLink2.default,
                   {
                     muiName: 'NavigationListItemLink',
                     key: 'nav-item-' + index,
                     text: item.label,
-                    href: item.url
+                    href: item.url,
+                    isSelected: isSelected
                   },
                   item.icon && _react2.default.createElement(
                     _List.ListItemIcon,
                     null,
-                    _react2.default.createElement(_SvgIcon.SvgIcon, { icon: item.icon, fill: _utils.colors.lightGrey })
+                    _react2.default.createElement(_SvgIcon.SvgIcon, { icon: item.icon, fill: isSelected ? _utils.colors.lightGrey : _utils.colors.dustyGray })
                   )
                 );
               }
@@ -176,6 +188,7 @@ var Navigation = function (_Component) {
 
 Navigation.propTypes = {
   data: _propTypes2.default.array,
+  activePage: _propTypes2.default.object,
   isCollapsed: _propTypes2.default.bool,
   logoUrl: _propTypes2.default.string,
   handleOnClose: _propTypes2.default.func.isRequired,

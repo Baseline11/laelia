@@ -10,11 +10,18 @@ var _utils = require('../../utils');
 
 var styles = {
   navItem: _extends({}, _utils.fonts.baseText, {
-    color: _utils.colors.lightGrey,
+    color: _utils.colors.dustyGray,
     textTransform: 'capitalize'
   }),
+  navItemSelected: {
+    color: _utils.colors.lightGrey
+  },
+  selected: {
+    background: _utils.colors.mineShaft,
+    boxShadow: 'inset 4px 0 0 0 ' + _utils.colors.pictonBlue
+  },
   collapseIcon: {
-    fill: _utils.colors.lightGrey
+    fill: _utils.colors.dustyGray
   }
 };
 

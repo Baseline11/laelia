@@ -11,11 +11,17 @@ var _utils = require('../../utils');
 var styles = function styles(theme) {
   return {
     navItem: _extends({}, _utils.fonts.baseText, {
-      color: _utils.colors.lightGrey,
+      color: _utils.colors.dustyGray,
       textTransform: 'capitalize'
     }),
+    navItemSelected: {
+      color: _utils.colors.lightGrey
+    },
     nested: {
       paddingLeft: theme.spacing.unit * 7
+    },
+    selected: {
+      background: _utils.colors.scorpion
     }
   };
 };
