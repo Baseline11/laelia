@@ -37,7 +37,7 @@ function TileElement(_ref) {
 TileElement.propTypes = {
   actionOnClick: _propTypes2.default.func,
   wrapperStyleOverride: _propTypes2.default.object,
-  children: _propTypes2.default.array
+  children: _propTypes2.default.oneOfType([_propTypes2.default.object, _propTypes2.default.array])
 };
 
 exports.default = (0, _radium2.default)(TileElement);
