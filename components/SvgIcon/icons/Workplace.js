@@ -24,7 +24,7 @@ function Workplace(_ref) {
     { width: width, height: height, viewBox: '0 0 28 28' },
     _react2.default.createElement('path', {
       fill: fill,
-      d: 'M22.4,13.2l-5.5-5.5l-5.6,7L7,10.4l-2.2,2.2H0v12.6C0,26.7,1.3,28,2.8,28h22.4c1.5,0,2.8-1.3,2.8-2.8V9.8h-2.2 L22.4,13.2z M7,25.2H4.2V21H7V25.2z M12.6,25.2H9.8v-7h2.8V25.2z M18.2,25.2h-2.8V21h2.8V25.2z M23.8,25.2H21v-7h2.8V25.2z'
+      d: 'M22.4,13.2l-5.5-5.5l-5.6,7L7,10.4l-2.2,2.2H0v12.6C0,26.7,1.3,28,2.8,28h22.4c1.5,0,2.8-1.3,2.8-2.8V9.8h-2.2\r L22.4,13.2z M7,25.2H4.2V21H7V25.2z M12.6,25.2H9.8v-7h2.8V25.2z M18.2,25.2h-2.8V21h2.8V25.2z M23.8,25.2H21v-7h2.8V25.2z'
     }),
     _react2.default.createElement('path', {
       fill: fill,
