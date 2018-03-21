@@ -38,7 +38,7 @@ Triggers.propTypes = {
 Triggers.defaultProps = {
   width: 20,
   height: 20,
-  fill: '#fff'
+  fill: '#000'
 };
 
 exports.default = Triggers;

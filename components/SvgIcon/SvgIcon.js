@@ -44,7 +44,20 @@ var SvgIcon = function (_Component) {
       help: _index.IconHelp,
       reports: _index.IconReports,
       settings: _index.IconSettings,
-      triggers: _index.IconTriggers
+      triggers: _index.IconTriggers,
+      commandCenter: _index.IconCommandCenter,
+      deploymentProcess: _index.IconDeploymentProcess,
+      faq: _index.IconFaq,
+      futureReleases: _index.IconFutureReleases,
+      ideasSuggestions: _index.IconIdeasSuggestions,
+      meetUp: _index.IconMeetUp,
+      supportTickets: _index.IconSupportTickets,
+      systemUsage: _index.IconSystemUsage,
+      training: _index.IconTraining,
+      university: _index.IconUniversity,
+      userForum: _index.IconUserForum,
+      whatsNew: _index.IconWhatsNew,
+      externalLink: _index.IconExternalLink
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
