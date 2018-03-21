@@ -14,35 +14,39 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Workplace(_ref) {
+function UserForum(_ref) {
   var width = _ref.width,
       height = _ref.height,
       fill = _ref.fill;
 
   return _react2.default.createElement(
     'svg',
-    { width: width, height: height, viewBox: '0 0 28 28' },
+    { height: height, width: width, viewBox: '0 0 24 22' },
     _react2.default.createElement('path', {
       fill: fill,
-      d: 'M22.4,13.2l-5.5-5.5l-5.6,7L7,10.4l-2.2,2.2H0v12.6C0,26.7,1.3,28,2.8,28h22.4c1.5,0,2.8-1.3,2.8-2.8V9.8h-2.2 L22.4,13.2z M7,25.2H4.2V21H7V25.2z M12.6,25.2H9.8v-7h2.8V25.2z M18.2,25.2h-2.8V21h2.8V25.2z M23.8,25.2H21v-7h2.8V25.2z'
+      d: 'M15,14c-.2,0-.3,0-.4-.1A1.15,1.15,0,0,1,14,13V11H13V9h2a.94.94,0,0,1,1,1v1l2.4-1.8A1.42,1.42,0,0,1,19,9h3V2H12V5H10V2a2,2,0,0,1,2-2H22a2,2,0,0,1,2,2V9a2,2,0,0,1-2,2H19.3l-3.7,2.8a1.42,1.42,0,0,1-.6.2Z'
     }),
     _react2.default.createElement('path', {
       fill: fill,
-      d: 'M25.2,0H2.8C1.3,0,0,1.3,0,2.8v7h3.6L7,6.4l4.1,4.1l5.6-7l5.7,5.7L24.6,7H28V2.8C28,1.3,26.7,0,25.2,0z'
+      d: 'M8,14a4,4,0,1,1,4-4A4,4,0,0,1,8,14ZM8,8a2,2,0,1,0,2,2A2,2,0,0,0,8,8Z'
+    }),
+    _react2.default.createElement('path', {
+      fill: fill,
+      d: 'M16,22H0V21c0-3.5,3.3-6,8-6s8,2.5,8,6ZM2.2,20H13.9c-.6-1.8-2.8-3-5.8-3s-5.3,1.2-5.9,3Z'
     })
   );
 }
 
-Workplace.propTypes = {
+UserForum.propTypes = {
   width: _propTypes2.default.number,
   height: _propTypes2.default.number,
   fill: _propTypes2.default.string
 };
 
-Workplace.defaultProps = {
-  width: 18,
-  height: 18,
+UserForum.defaultProps = {
+  width: 35,
+  height: 35,
   fill: '#000'
 };
 
-exports.default = Workplace;
+exports.default = UserForum;

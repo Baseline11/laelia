@@ -36,7 +36,7 @@ Basedrive.propTypes = {
 Basedrive.defaultProps = {
   width: 18,
   height: 14,
-  fill: '#fff'
+  fill: '#000'
 };
 
 exports.default = Basedrive;

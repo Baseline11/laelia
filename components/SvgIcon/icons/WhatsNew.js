@@ -14,29 +14,35 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Reports(_ref) {
+function WhatsNew(_ref) {
   var width = _ref.width,
       height = _ref.height,
       fill = _ref.fill;
 
   return _react2.default.createElement(
     'svg',
-    { width: width, height: height, viewBox: '0 0 28 35' },
-    _react2.default.createElement('path', { fill: fill, d: 'M20,0H3.5C1.6,0,0,1.6,0,3.5v28C0,33.4,1.6,35,3.5,35h21c1.9,0,3.5-1.6,3.5-3.5V8L20,0z M5.2,17.5h14V21h-14 V17.5z M22.8,28H5.2v-3.5h17.5V28z M17.5,10.5V1.8l8.8,8.8H17.5z'
+    { height: height, width: width, viewBox: '0 0 20 17' },
+    _react2.default.createElement('polygon', {
+      fill: fill,
+      points: '9 9 6 9 6 11 9 11 9 14 11 14 11 11 14 11 14 9 11 9 11 6 9 6 9 9'
+    }),
+    _react2.default.createElement('path', {
+      fill: fill,
+      d: 'M18,3H9.8L8.2.8A2.09,2.09,0,0,0,6.6,0H2A2,2,0,0,0,0,2V15a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V5A2,2,0,0,0,18,3ZM2,15V2H6.5L8.1,4.2A2.09,2.09,0,0,0,9.7,5h8.2V15Z'
     })
   );
 }
 
-Reports.propTypes = {
+WhatsNew.propTypes = {
   width: _propTypes2.default.number,
   height: _propTypes2.default.number,
   fill: _propTypes2.default.string
 };
 
-Reports.defaultProps = {
-  width: 14,
-  height: 18,
+WhatsNew.defaultProps = {
+  width: 35,
+  height: 35,
   fill: '#000'
 };
 
-exports.default = Reports;
+exports.default = WhatsNew;

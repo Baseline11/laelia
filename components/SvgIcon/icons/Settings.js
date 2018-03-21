@@ -36,7 +36,7 @@ Settings.propTypes = {
 Settings.defaultProps = {
   width: 18,
   height: 18,
-  fill: '#fff'
+  fill: '#000'
 };
 
 exports.default = Settings;
