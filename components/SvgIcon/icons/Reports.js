@@ -22,7 +22,7 @@ function Reports(_ref) {
   return _react2.default.createElement(
     'svg',
     { width: width, height: height, viewBox: '0 0 28 35' },
-    _react2.default.createElement('path', { fill: fill, d: 'M20,0H3.5C1.6,0,0,1.6,0,3.5v28C0,33.4,1.6,35,3.5,35h21c1.9,0,3.5-1.6,3.5-3.5V8L20,0z M5.2,17.5h14V21h-14\r V17.5z M22.8,28H5.2v-3.5h17.5V28z M17.5,10.5V1.8l8.8,8.8H17.5z'
+    _react2.default.createElement('path', { fill: fill, d: 'M20,0H3.5C1.6,0,0,1.6,0,3.5v28C0,33.4,1.6,35,3.5,35h21c1.9,0,3.5-1.6,3.5-3.5V8L20,0z M5.2,17.5h14V21h-14 V17.5z M22.8,28H5.2v-3.5h17.5V28z M17.5,10.5V1.8l8.8,8.8H17.5z'
     })
   );
 }
