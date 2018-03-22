@@ -57,7 +57,8 @@ var SvgIcon = function (_Component) {
       university: _index.IconUniversity,
       userForum: _index.IconUserForum,
       whatsNew: _index.IconWhatsNew,
-      externalLink: _index.IconExternalLink
+      externalLink: _index.IconExternalLink,
+      apiGuide: _index.IconApiGuide
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 

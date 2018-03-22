@@ -29,3 +29,4 @@ export {default as IconUniversity} from './components/SvgIcon/icons/University';
 export {default as IconUserForum} from './components/SvgIcon/icons/UserForum';
 export {default as IconWhatsNew} from './components/SvgIcon/icons/WhatsNew';
 export {default as IconExternalLink} from './components/SvgIcon/icons/ExternalLink';
+export {default as IconApiGuide} from './components/SvgIcon/icons/ApiGuide';

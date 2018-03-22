@@ -175,6 +175,15 @@ Object.defineProperty(exports, 'IconExternalLink', {
   }
 });
 
+var _ApiGuide = require('./icons/ApiGuide');
+
+Object.defineProperty(exports, 'IconApiGuide', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ApiGuide).default;
+  }
+});
+
 var _SvgIcon = require('./SvgIcon');
 
 Object.defineProperty(exports, 'SvgIcon', {
