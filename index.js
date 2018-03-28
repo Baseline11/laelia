@@ -11,6 +11,7 @@ export {default as Navigation} from './components/Navigation';
 export {default as TileElement} from './components/TileElement';
 export {default as TextArea} from './components/TextArea';
 export {default as IconBasedrive} from './components/SvgIcon/icons/Basedrive';
+export {default as IconBasedrive} from './components/SvgIcon/icons/Basedrive';
 export {default as IconHelp} from './components/SvgIcon/icons/Help';
 export {default as IconReports} from './components/SvgIcon/icons/Reports';
 export {default as IconSettings} from './components/SvgIcon/icons/Settings';
