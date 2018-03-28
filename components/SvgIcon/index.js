@@ -22,6 +22,15 @@ Object.defineProperty(exports, 'IconHelp', {
   }
 });
 
+var _Person = require('./icons/Person');
+
+Object.defineProperty(exports, 'IconPerson', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Person).default;
+  }
+});
+
 var _Reports = require('./icons/Reports');
 
 Object.defineProperty(exports, 'IconReports', {
@@ -172,6 +181,15 @@ Object.defineProperty(exports, 'IconExternalLink', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_ExternalLink).default;
+  }
+});
+
+var _ApiGuide = require('./icons/ApiGuide');
+
+Object.defineProperty(exports, 'IconApiGuide', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ApiGuide).default;
   }
 });
 

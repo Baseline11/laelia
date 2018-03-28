@@ -40,7 +40,7 @@ function NavigationListItemLink(_ref) {
       button: true,
       component: 'a',
       href: href,
-      className: (0, _classnames2.default)(isNested && classes.nested, isSelected && classes.selected)
+      className: (0, _classnames2.default)(isNested && classes.nested, isSelected && !isNested && classes.selected, isNested && isSelected && classes.nestedSelected)
     },
     children,
     _react2.default.createElement(_List.ListItemText, {

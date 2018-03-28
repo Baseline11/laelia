@@ -21,6 +21,10 @@ var styles = function styles(theme) {
       paddingLeft: theme.spacing.unit * 7
     },
     selected: {
+      background: _utils.colors.mineShaft,
+      boxShadow: 'inset 4px 0 0 0 ' + _utils.colors.pictonBlue
+    },
+    nestedSelected: {
       background: _utils.colors.scorpion
     }
   };

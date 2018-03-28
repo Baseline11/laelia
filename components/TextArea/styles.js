@@ -9,12 +9,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 var _utils = require('../../utils');
 
 exports.default = {
-  inputWrapper: {
-    width: '100%'
-  },
-  inputText: _extends({}, _utils.common.baseTextInput, {
-    width: 'inherit',
+  textArea: _extends({}, _utils.common.baseTextInput, {
+    width: 400,
+    height: 100,
+    resize: 'none',
+    outline: 'none',
     padding: 10
   }),
-  texInputDisabled: _extends({}, _utils.common.disabledTextInput)
+  texAreaDisabled: _extends({}, _utils.common.disabledTextInput)
 };

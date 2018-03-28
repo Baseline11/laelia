@@ -19,7 +19,10 @@ exports.default = {
     ':hover': {}
   },
   infoWrapper: {
-    display: 'none',
+    display: 'inline-block',
+    height: 0,
+    width: 0,
+    visibility: 'hidden',
     whiteSpace: 'nowrap',
     border: '1px solid rgba(0, 0, 0, .2)',
     boxShadow: '0 5px 10px rgba(0, 0, 0, .2)',
@@ -31,10 +34,14 @@ exports.default = {
     zIndex: 1,
     bottom: 0,
     left: '50%',
-    transform: 'translate(-50%, -35px)'
+    transform: 'translate(-50%, -30px)',
+    transition: 'transform .2s ease'
   },
   infoWrapperVisible: {
-    display: 'inline-block'
+    height: 'auto',
+    width: 'auto',
+    visibility: 'visible',
+    transform: 'translate(-50%, -35px)'
   },
   infoContent: _extends({}, _utils.fonts.baseText),
   mainArrow: {

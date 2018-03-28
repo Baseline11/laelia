@@ -22,4 +22,13 @@ Object.defineProperty(exports, 'fonts', {
   }
 });
 
+var _common = require('./styles/common');
+
+Object.defineProperty(exports, 'common', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_common).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

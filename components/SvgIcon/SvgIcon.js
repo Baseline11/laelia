@@ -41,6 +41,7 @@ var SvgIcon = function (_Component) {
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SvgIcon.__proto__ || Object.getPrototypeOf(SvgIcon)).call.apply(_ref, [this].concat(args))), _this), _this.icons = {
       workplace: _index.IconWorkplace,
       basedrive: _index.IconBasedrive,
+      person: _index.IconPerson,
       help: _index.IconHelp,
       reports: _index.IconReports,
       settings: _index.IconSettings,
@@ -57,7 +58,8 @@ var SvgIcon = function (_Component) {
       university: _index.IconUniversity,
       userForum: _index.IconUserForum,
       whatsNew: _index.IconWhatsNew,
-      externalLink: _index.IconExternalLink
+      externalLink: _index.IconExternalLink,
+      apiGuide: _index.IconApiGuide
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 

@@ -9,7 +9,7 @@ export {default as LanguageTabs} from './components/LanguageTabs';
 export {default as Select} from './components/Select';
 export {default as Navigation} from './components/Navigation';
 export {default as TileElement} from './components/TileElement';
-
+export {default as TextArea} from './components/TextArea';
 export {default as IconBasedrive} from './components/SvgIcon/icons/Basedrive';
 export {default as IconHelp} from './components/SvgIcon/icons/Help';
 export {default as IconReports} from './components/SvgIcon/icons/Reports';
@@ -29,3 +29,5 @@ export {default as IconUniversity} from './components/SvgIcon/icons/University';
 export {default as IconUserForum} from './components/SvgIcon/icons/UserForum';
 export {default as IconWhatsNew} from './components/SvgIcon/icons/WhatsNew';
 export {default as IconExternalLink} from './components/SvgIcon/icons/ExternalLink';
+export {default as IconApiGuide} from './components/SvgIcon/icons/ApiGuide';
+export {default as CheckBox} from './components/CheckBox';

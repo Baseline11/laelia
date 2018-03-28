@@ -28,7 +28,9 @@ function TextInput(_ref) {
       wrapperStyleOverride = _ref.wrapperStyleOverride,
       inputStyleOverride = _ref.inputStyleOverride,
       placeholder = _ref.placeholder,
-      inputType = _ref.inputType;
+      inputType = _ref.inputType,
+      disabled = _ref.disabled,
+      required = _ref.required;
 
   var inputTypeVal = ['text', 'email', 'tel'];
 
@@ -40,7 +42,9 @@ function TextInput(_ref) {
       defaultValue: defaultValue,
       placeholder: placeholder,
       onChange: handleOnChange,
-      style: [_styles2.default.inputText, inputStyleOverride]
+      disabled: disabled,
+      required: required,
+      style: [_styles2.default.inputText, inputStyleOverride, disabled && _styles2.default.texInputDisabled]
     })
   );
 }
@@ -51,7 +55,9 @@ TextInput.propTypes = {
   inputType: _propTypes2.default.string,
   handleOnChange: _propTypes2.default.func.isRequired,
   wrapperStyleOverride: _propTypes2.default.object,
-  inputStyleOverride: _propTypes2.default.object
+  inputStyleOverride: _propTypes2.default.object,
+  disabled: _propTypes2.default.bool,
+  required: _propTypes2.default.bool
 };
 
 exports.default = (0, _radium2.default)(TextInput);
