@@ -22,5 +22,6 @@ exports.default = {
   sushi: '#8fc345',
   pictonBlue: '#1aadef',
   fadedRed: '#d7444a',
-  sunglo: '#e06e73'
+  sunglo: '#e06e73',
+  boulder: '#7d7d7d'
 };
