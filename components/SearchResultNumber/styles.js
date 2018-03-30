@@ -15,6 +15,13 @@ exports.default = {
     verticalAlign: 'top',
     lineHeight: '50px',
     height: 50,
-    fontSize: 12
-  })
+    fontSize: 12,
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)'
+  }),
+  resultNumberContainer: {
+    display: 'block',
+    position: 'relative'
+  }
 };

@@ -49,7 +49,7 @@ var searchResultNumber = function searchResultNumber(WrappedComponent, value) {
 
           return _react2.default.createElement(
             'div',
-            null,
+            { style: _extends({}, _styles2.default.resultNumberContainer) },
             _react2.default.createElement(WrappedComponent, null),
             _react2.default.createElement(
               'span',

@@ -4,9 +4,11 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _react3 = require('@storybook/react');
+var _propTypes = require('prop-types');
 
-var _addonActions = require('@storybook/addon-actions');
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _react3 = require('@storybook/react');
 
 var _TextArea = require('../../TextArea');
 
@@ -24,30 +26,19 @@ var updateState = function updateState(newValue) {
   limiter = newValue.target.value.length < initialLimitState ? initialLimitState - newValue.target.value.length : 0;
 };
 
-// const onChangeHandler = (e) => updateState(e.target.value);
-// const TextAreaInstance = ({handler, limit}) => <TextArea handleOnChange={handler} limit={limit} />;
 var TextAreaInstance = function TextAreaInstance(_ref) {
   var changeHandler = _ref.changeHandler,
       limit = _ref.limit;
   return _react2.default.createElement(_TextArea2.default, { handleOnChange: changeHandler, maxLength: limit });
 };
 
-// const WrappedComponent = CharacterLimiter(TextAreaInstance, limiter);
+TextAreaInstance.propTypes = {
+  changeHandler: _propTypes2.default.func.isRequired,
+  limit: _propTypes2.default.number.isRequired
+};
 
-(0, _react3.storiesOf)('CharacterLimiter', module)
-// .add('Default', () => (
-//   <WrappedComponent changeHandler={updateState} limit={limiter} />
-// ))
-.add('Default', function () {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(_CharacterLimiter2.default, { component: TextAreaInstance, limit: limiter })
-  )
-  // ))
-  // .add('Default', () => (
-  //   <CharacterLimiter limit={limiter}>
-  //     <TextArea handleOnChange={updateState} maxLength={limiter} />
-  //   </CharacterLimiter>
-  ;
+var WrappedComponent = (0, _CharacterLimiter2.default)(TextAreaInstance, limiter);
+
+(0, _react3.storiesOf)('CharacterLimiter', module).add('Default', function () {
+  return _react2.default.createElement(WrappedComponent, { changeHandler: updateState, limit: limiter });
 });

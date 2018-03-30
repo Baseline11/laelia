@@ -22,39 +22,42 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// const CharacterLimiter = (BaseComponent, limit) =>
-var CharacterLimiter = function CharacterLimiter(_ref) {
-  var component = _ref.component,
-      limit = _ref.limit;
-  return function (_Component) {
-    _inherits(_class, _Component);
+var CharacterLimiter = function CharacterLimiter(BaseComponent, limit) {
+  return (
+    // eslint-disable-next-line react/prefer-stateless-function
+    function (_Component) {
+      _inherits(_class, _Component);
 
-    function _class() {
-      _classCallCheck(this, _class);
+      function _class() {
+        _classCallCheck(this, _class);
 
-      return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
-    }
-
-    _createClass(_class, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          _react.Fragment,
-          null,
-          component,
-          _react2.default.createElement(
-            'p',
-            null,
-            limit + ' chars left'
-          )
-        );
+        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
       }
-    }]);
 
-    return _class;
-  }(_react.Component);
+      _createClass(_class, [{
+        key: 'render',
+        value: function render() {
+          return _react2.default.createElement(
+            _react.Fragment,
+            null,
+            _react2.default.createElement(BaseComponent, this.props),
+            _react2.default.createElement(
+              'p',
+              null,
+              limit + ' chars left'
+            )
+          );
+        }
+      }]);
+
+      return _class;
+    }(_react.Component)
+  );
 };
 
-CharacterLimiter.propTypes = {};
+CharacterLimiter.propTypes = {
+  BaseComponent: _propTypes2.default.element.isRequired,
+  limit: _propTypes2.default.number.isRequired
+};
 
 exports.default = CharacterLimiter;

@@ -24,6 +24,8 @@ exports.default = {
   },
   title: {
     fontFamily: '"Montserrat", sans-serif, customUbuntu, "palatino linotype", "trebuchet ms", "times new roman"',
-    fontSize: 18
+    fontSize: 36,
+    fontWeight: 'normal',
+    color: _colors2.default.tundora
   }
 };
