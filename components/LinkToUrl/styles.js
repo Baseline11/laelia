@@ -20,7 +20,6 @@ exports.default = {
     padding: '5px 10px',
     display: 'inline-block',
     height: 35,
-    margin: '0',
     textDecoration: 'none',
     ':hover': {
       cursor: 'pointer',

@@ -9,22 +9,33 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 var _utils = require('../../utils');
 
 exports.default = {
-  baseAction: _extends({}, _utils.fonts.baseText, {
-    fontSize: 20,
-    color: _utils.colors.white,
-    background: _utils.colors.pictonBlue,
-    borderRadius: 3,
-    border: 0,
-    outline: 0,
-    padding: 5,
+  passwordWrapper: _extends({}, _utils.fonts.baseText, {
+    width: '100%',
+    position: 'relative'
+  }),
+  showPassSVG: {
+    position: 'absolute',
+    width: 31,
+    height: 30,
+    right: -10,
+    top: 5,
     display: 'inline-block',
-    height: 35,
     ':hover': {
       cursor: 'pointer'
     }
-  }),
-  disabled: {
-    background: _utils.colors.dustyGray,
-    color: _utils.colors.lightGrey
+  },
+  hidePassSVG: {
+    position: 'absolute',
+    width: 27,
+    height: 26,
+    right: -8,
+    top: 7,
+    display: 'inline-block',
+    ':hover': {
+      cursor: 'pointer'
+    }
+  },
+  hideIconSVG: {
+    display: 'none'
   }
 };

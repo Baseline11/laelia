@@ -59,7 +59,12 @@ var SvgIcon = function (_Component) {
       userForum: _index.IconUserForum,
       whatsNew: _index.IconWhatsNew,
       externalLink: _index.IconExternalLink,
-      apiGuide: _index.IconApiGuide
+      apiGuide: _index.IconApiGuide,
+      actionMore: _index.IconActionMore,
+      closeButton: _index.IconCloseButton,
+      showPassword: _index.IconShowPassword,
+      hidePassword: _index.IconHidePassword,
+      checkedArrow: _index.IconCheckedArrow
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 

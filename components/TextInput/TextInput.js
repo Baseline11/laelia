@@ -32,7 +32,7 @@ function TextInput(_ref) {
       disabled = _ref.disabled,
       required = _ref.required;
 
-  var inputTypeVal = ['text', 'email', 'tel'];
+  var inputTypeVal = ['text', 'email', 'tel', 'password'];
 
   return _react2.default.createElement(
     'div',

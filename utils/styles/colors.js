@@ -23,5 +23,6 @@ exports.default = {
   pictonBlue: '#1aadef',
   fadedRed: '#d7444a',
   sunglo: '#e06e73',
-  boulder: '#7d7d7d'
+  boulder: '#7d7d7d',
+  azalea: '#f8cecc'
 };
