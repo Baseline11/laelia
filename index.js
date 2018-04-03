@@ -33,3 +33,4 @@ export {default as IconExternalLink} from './components/SvgIcon/icons/ExternalLi
 export {default as IconApiGuide} from './components/SvgIcon/icons/ApiGuide';
 export {default as CheckBox} from './components/CheckBox';
 export {default as searchResultNumber} from './components/searchResultNumber';
+export {default as LinkToUrl} from './components/LinkToUrl';

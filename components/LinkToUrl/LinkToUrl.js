@@ -22,32 +22,26 @@ var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ActionButton(_ref) {
+function LinkToUrl(_ref) {
   var text = _ref.text,
-      disabled = _ref.disabled,
-      action = _ref.action,
+      url = _ref.url,
       styleOverride = _ref.styleOverride,
       children = _ref.children;
 
   var content = !children ? text : children;
 
   return _react2.default.createElement(
-    'button',
-    {
-      disabled: disabled,
-      style: [_styles2.default.baseAction, disabled && _styles2.default.disabled, styleOverride],
-      onClick: action
-    },
+    'a',
+    { href: url, style: [_styles2.default.baseAction, styleOverride] },
     content
   );
 }
 
-ActionButton.propTypes = {
+LinkToUrl.propTypes = {
   text: _propTypes2.default.string,
-  disabled: _propTypes2.default.bool,
   styleOverride: _propTypes2.default.object,
   children: _propTypes2.default.element,
-  action: _propTypes2.default.func.isRequired
+  url: _propTypes2.default.string.isRequired
 };
 
-exports.default = (0, _radium2.default)(ActionButton);
+exports.default = (0, _radium2.default)(LinkToUrl);

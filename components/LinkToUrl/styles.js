@@ -11,21 +11,21 @@ var _utils = require('../../utils');
 exports.default = {
   baseAction: _extends({}, _utils.fonts.baseText, {
     fontSize: 20,
+    lineHeight: '35px',
     color: _utils.colors.white,
     background: _utils.colors.pictonBlue,
     borderRadius: 3,
     border: 0,
     outline: 0,
-    padding: 5,
+    padding: '5px 10px',
     display: 'inline-block',
     height: 35,
     margin: '0',
+    textDecoration: 'none',
     ':hover': {
-      cursor: 'pointer'
+      cursor: 'pointer',
+      color: _utils.colors.white,
+      opacity: '.8'
     }
-  }),
-  disabled: {
-    background: _utils.colors.dustyGray,
-    color: _utils.colors.lightGrey
-  }
+  })
 };
