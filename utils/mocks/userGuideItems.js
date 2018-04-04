@@ -91,7 +91,7 @@ exports.default = [{
   name: 'Deployment Process',
   icon: 'deploymentProcess',
   external: true,
-  order: 11,
+  order: 18,
   description: 'Find out what the best practices are to set-up and maintain your sokution deployment',
   link: 'https://baselinesupport.zendesk.com/hc/en-us/categories/204704508-Customer-Training-Modules'
 }, {

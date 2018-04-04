@@ -25,11 +25,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function ActionPanel(_ref) {
   var actions = _ref.actions,
       _ref$visible = _ref.visible,
-      visible = _ref$visible === undefined ? false : _ref$visible;
+      visible = _ref$visible === undefined ? false : _ref$visible,
+      styleOverride = _ref.styleOverride,
+      panelLinkStylesOverride = _ref.panelLinkStylesOverride;
 
   return visible && _react2.default.createElement(
     'div',
-    { style: _styles2.default.basePanel },
+    { style: [_styles2.default.basePanel, styleOverride] },
     actions.map(function (action, index) {
       var isFirstChild = index === 0;
       var isLastChild = index === actions.length - 1;
@@ -38,7 +40,7 @@ function ActionPanel(_ref) {
         'button',
         {
           key: index,
-          style: [_styles2.default.basePanelAction, isFirstChild && _styles2.default.basePanelActionFirst, isLastChild && _styles2.default.basePanelActionLast]
+          style: [_styles2.default.basePanelAction, panelLinkStylesOverride, isFirstChild && _styles2.default.basePanelActionFirst, isLastChild && _styles2.default.basePanelActionLast]
         },
         _react2.default.createElement(
           'a',
@@ -52,7 +54,9 @@ function ActionPanel(_ref) {
 
 ActionPanel.propTypes = {
   actions: _propTypes2.default.array.isRequired,
-  visible: _propTypes2.default.bool
+  visible: _propTypes2.default.bool,
+  styleOverride: _propTypes2.default.object,
+  panelLinkStylesOverride: _propTypes2.default.object
 };
 
 exports.default = (0, _radium2.default)(ActionPanel);

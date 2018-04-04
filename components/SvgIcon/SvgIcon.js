@@ -61,7 +61,6 @@ var SvgIcon = function (_Component) {
       externalLink: _index.IconExternalLink,
       apiGuide: _index.IconApiGuide,
       actionMore: _index.IconActionMore,
-      closeButton: _index.IconCloseButton,
       showPassword: _index.IconShowPassword,
       hidePassword: _index.IconHidePassword,
       checkedArrow: _index.IconCheckedArrow
