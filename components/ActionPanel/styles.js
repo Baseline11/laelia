@@ -16,7 +16,9 @@ exports.default = {
     borderRadius: borderRadiusActionPanel,
     boxShadow: '0 5px 10px rgba(0, 0, 0, .175)',
     display: 'inline-block',
-    minWidth: '100px'
+    minWidth: '100px',
+    background: _utils.colors.white,
+    zIndex: 10
   }),
   basePanelAction: _extends({}, _utils.fonts.baseText, {
     outline: 0,
