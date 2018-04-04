@@ -11,7 +11,7 @@ var _utils = require('../../utils');
 exports.default = {
   tile: _extends({}, _utils.fonts.baseText, {
     width: '100%',
-    backgroundColor: _utils.colors.white,
+    background: _utils.colors.white,
     padding: '40px 5px',
     borderRadius: 5,
     boxShadow: '0 0 10px 0 rgba(0, 0, 0, .3)',

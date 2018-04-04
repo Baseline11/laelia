@@ -14,7 +14,7 @@ exports.default = {
     padding: '20px 50px 20px 20px',
     width: 'inherit',
     border: '1px solid ' + _utils.colors.quillGray,
-    backgroundColor: _utils.colors.white,
+    background: _utils.colors.white,
     listStyle: 'none',
     fontSize: 12,
     color: _utils.colors.gray,

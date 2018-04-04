@@ -53,7 +53,7 @@ TextInput.propTypes = {
   defaultValue: _propTypes2.default.string,
   placeholder: _propTypes2.default.string,
   inputType: _propTypes2.default.string,
-  handleOnChange: _propTypes2.default.func.isRequired,
+  handleOnChange: _propTypes2.default.func,
   wrapperStyleOverride: _propTypes2.default.object,
   inputStyleOverride: _propTypes2.default.object,
   disabled: _propTypes2.default.bool,

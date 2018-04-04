@@ -28,7 +28,7 @@ exports.default = {
     appearance: 'none',
     width: 'inherit',
     border: '1px solid ' + _utils.colors.quillGray,
-    backgroundColor: _utils.colors.lightGrey,
+    background: _utils.colors.lightGrey,
     fontSize: 12,
     padding: 10,
     color: _utils.colors.gray,

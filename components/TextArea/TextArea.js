@@ -55,7 +55,7 @@ TextArea.propTypes = {
   required: _propTypes2.default.bool,
   disabled: _propTypes2.default.bool,
   textAreaStyleOverride: _propTypes2.default.object,
-  handleOnChange: _propTypes2.default.func.isRequired
+  handleOnChange: _propTypes2.default.func
 };
 
 exports.default = (0, _radium2.default)(TextArea);

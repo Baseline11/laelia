@@ -14,7 +14,7 @@ exports.default = {
   },
   buttonLanguage: {
     border: '1px solid ' + _utils.colors.quillGray,
-    backgroundColor: _utils.colors.lightGrey,
+    background: _utils.colors.lightGrey,
     fontSize: 12,
     textTransform: 'uppercase',
     fontWeight: 'bold',

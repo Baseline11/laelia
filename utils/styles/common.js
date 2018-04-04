@@ -19,7 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
   baseTextInput: _extends({}, _fonts2.default.baseText, {
     border: '1px solid ' + _colors2.default.quillGray,
-    backgroundColor: _colors2.default.lightGrey,
+    background: _colors2.default.lightGrey,
     fontSize: 12
   }),
   disabledTextInput: {

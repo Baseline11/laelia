@@ -13,17 +13,17 @@ exports.default = {
     cursor: 'pointer',
     height: 20,
     width: 20,
-    backgroundColor: _utils.colors.white,
+    background: _utils.colors.white,
     border: '1px solid ' + _utils.colors.gray,
     borderRadius: 3
   },
   checkboxContainerChecked: {
-    backgroundColor: _utils.colors.pictonBlue,
+    background: _utils.colors.pictonBlue,
     border: '1px solid ' + _utils.colors.pictonBlue
   },
   checkboxContainerDisabled: {
     cursor: 'not-allowed',
-    backgroundColor: _utils.colors.lightGrey,
+    background: _utils.colors.lightGrey,
     border: '1px solid ' + _utils.colors.lightGrey
   },
   checkboxStyle: {
