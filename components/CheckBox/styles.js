@@ -32,7 +32,10 @@ exports.default = {
     cursor: 'pointer',
     width: 'inherit',
     height: 'inherit',
-    zIndex: 2
+    zIndex: 2,
+    margin: 0,
+    top: 0,
+    left: 0
   },
   checkboxStyleDisabled: {
     display: 'none'

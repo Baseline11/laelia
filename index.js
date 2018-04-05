@@ -38,4 +38,5 @@ export {default as CheckBox} from './components/CheckBox';
 export {default as SearchResultNumber} from './components/SearchResultNumber';
 export {default as LinkToUrl} from './components/LinkToUrl';
 export {default as PopupMessage} from './components/PopupMessage';
+export {default as UserRoles} from './components/UserRoles';
 

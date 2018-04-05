@@ -46,7 +46,7 @@ exports.default = {
     transition: 'all .07s ease-out',
     ':hover': {
       boxShadow: '0 5px 10px rgba(0, 0, 0, .3)',
-      background: 'rgba(255, 255, 255)'
+      background: _utils.colors.white
     }
   }
 };
