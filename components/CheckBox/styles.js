@@ -10,19 +10,19 @@ exports.default = {
   checkboxContainer: {
     display: 'block',
     position: 'relative',
-    cursor: 'pointer',
     height: 20,
     width: 20,
     background: _utils.colors.white,
     border: '1px solid ' + _utils.colors.gray,
-    borderRadius: 3
+    borderRadius: 3,
+    borderBox: 'content-box'
   },
   checkboxContainerChecked: {
     background: _utils.colors.pictonBlue,
     border: '1px solid ' + _utils.colors.pictonBlue
   },
   checkboxContainerDisabled: {
-    cursor: 'not-allowed',
+    cursor: 'normal',
     background: _utils.colors.lightGrey,
     border: '1px solid ' + _utils.colors.lightGrey
   },
@@ -35,7 +35,8 @@ exports.default = {
     zIndex: 2,
     margin: 0,
     top: 0,
-    left: 0
+    left: 0,
+    borderBox: 'content-box'
   },
   checkboxStyleDisabled: {
     display: 'none'
@@ -55,7 +56,10 @@ exports.default = {
     zIndex: 1
   },
   spanCheckboxChecked: {
-    borderColor: _utils.colors.white
+    borderColor: _utils.colors.lightGrey
+  },
+  spanCheckboxUnchecked: {
+    display: 'none'
   },
   spanCheckboxDisabled: {
     borderColor: _utils.colors.silver,

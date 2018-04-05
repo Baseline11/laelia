@@ -48,7 +48,7 @@ function CheckBox(_ref) {
       style: [_styles2.default.checkboxStyle, disabled && _styles2.default.checkboxStyleDisabled]
     }),
     _react2.default.createElement('span', {
-      style: [_styles2.default.spanCheckbox, checked && _styles2.default.spanCheckboxChecked, disabled && _styles2.default.spanCheckboxDisabled, checkboxStyleOverride]
+      style: [_styles2.default.spanCheckbox, checked && _styles2.default.spanCheckboxChecked, !checked && _styles2.default.spanCheckboxUnchecked, disabled && _styles2.default.spanCheckboxDisabled, checkboxStyleOverride]
     })
   );
 }
