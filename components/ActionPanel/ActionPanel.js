@@ -35,18 +35,28 @@ function ActionPanel(_ref) {
     actions.map(function (action, index) {
       var isFirstChild = index === 0;
       var isLastChild = index === actions.length - 1;
-
-      return _react2.default.createElement(
+      var button = action.type === 'url' ? _react2.default.createElement(
+        'a',
+        {
+          key: action.text + '-' + index,
+          style: [_styles2.default.basePanelAction, panelLinkStylesOverride, isFirstChild && _styles2.default.basePanelActionFirst, isLastChild && _styles2.default.basePanelActionLast],
+          href: action.value
+        },
+        action.text
+      ) : _react2.default.createElement(
         'button',
         {
-          key: index,
-          style: [_styles2.default.basePanelAction, panelLinkStylesOverride, isFirstChild && _styles2.default.basePanelActionFirst, isLastChild && _styles2.default.basePanelActionLast]
+          key: action.text + '-' + index,
+          style: [_styles2.default.basePanelAction, panelLinkStylesOverride, isFirstChild && _styles2.default.basePanelActionFirst, isLastChild && _styles2.default.basePanelActionLast],
+          onClick: action.value
         },
-        _react2.default.createElement(
-          'a',
-          { key: action.text, style: _styles2.default.basePanelActionLink, href: action.value },
-          action.text
-        )
+        action.text
+      );
+
+      return _react2.default.createElement(
+        _react.Fragment,
+        { key: action.text + '-' + index },
+        button
       );
     })
   );
@@ -55,7 +65,7 @@ function ActionPanel(_ref) {
 ActionPanel.propTypes = {
   actions: _propTypes2.default.array.isRequired,
   visible: _propTypes2.default.bool,
-  styleOverride: _propTypes2.default.object,
+  styleOverride: _propTypes2.default.oneOfType([_propTypes2.default.object, _propTypes2.default.array]),
   panelLinkStylesOverride: _propTypes2.default.object
 };
 

@@ -30,7 +30,8 @@ function TextInput(_ref) {
       placeholder = _ref.placeholder,
       inputType = _ref.inputType,
       disabled = _ref.disabled,
-      required = _ref.required;
+      required = _ref.required,
+      name = _ref.name;
 
   var inputTypeVal = ['text', 'email', 'tel', 'password'];
 
@@ -44,6 +45,7 @@ function TextInput(_ref) {
       onChange: handleOnChange,
       disabled: disabled,
       required: required,
+      name: name,
       style: [_styles2.default.inputText, inputStyleOverride, disabled && _styles2.default.texInputDisabled]
     })
   );
@@ -51,6 +53,7 @@ function TextInput(_ref) {
 
 TextInput.propTypes = {
   defaultValue: _propTypes2.default.string,
+  name: _propTypes2.default.string,
   placeholder: _propTypes2.default.string,
   inputType: _propTypes2.default.string,
   handleOnChange: _propTypes2.default.func,

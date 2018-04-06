@@ -33,7 +33,9 @@ function PasswordInput(_ref) {
       handleOnClickIcon = _ref.handleOnClickIcon,
       handleOnChange = _ref.handleOnChange,
       wrapperStyleOverride = _ref.wrapperStyleOverride,
-      isHidden = _ref.isHidden;
+      isHidden = _ref.isHidden,
+      iconStyleOverride = _ref.iconStyleOverride,
+      inputName = _ref.inputName;
 
   var inputType = isHidden ? 'password' : 'text';
 
@@ -43,16 +45,17 @@ function PasswordInput(_ref) {
     _react2.default.createElement(_TextInput2.default, {
       placeholder: placeholder,
       inputType: inputType,
-      handleOnChange: handleOnChange
+      handleOnChange: handleOnChange,
+      name: inputName
     }),
     _react2.default.createElement(
       'span',
-      { key: 'showPassSVG', style: [_styles2.default.showPassSVG, !isHidden && _styles2.default.hideIconSVG], onClick: handleOnClickIcon },
+      { key: 'showPassSVG', style: [_styles2.default.showPassSVG, !isHidden && _styles2.default.hideIconSVG, iconStyleOverride], onClick: handleOnClickIcon },
       _react2.default.createElement(_SvgIcon.SvgIcon, { icon: 'showPassword' })
     ),
     _react2.default.createElement(
       'span',
-      { key: 'hidePassSVG', style: [_styles2.default.hidePassSVG, isHidden && _styles2.default.hideIconSVG], onClick: handleOnClickIcon },
+      { key: 'hidePassSVG', style: [_styles2.default.hidePassSVG, isHidden && _styles2.default.hideIconSVG, iconStyleOverride], onClick: handleOnClickIcon },
       _react2.default.createElement(_SvgIcon.SvgIcon, { icon: 'hidePassword' })
     )
   );
@@ -60,10 +63,12 @@ function PasswordInput(_ref) {
 
 PasswordInput.propTypes = {
   placeholder: _propTypes2.default.string,
+  inputName: _propTypes2.default.string,
   isHidden: _propTypes2.default.bool,
-  handleOnChange: _propTypes2.default.func.isRequired,
+  handleOnChange: _propTypes2.default.func,
   handleOnClickIcon: _propTypes2.default.func,
-  wrapperStyleOverride: _propTypes2.default.object
+  wrapperStyleOverride: _propTypes2.default.object,
+  iconStyleOverride: _propTypes2.default.object
 };
 
 exports.default = (0, _radium2.default)(PasswordInput);

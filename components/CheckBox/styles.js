@@ -15,7 +15,7 @@ exports.default = {
     background: _utils.colors.white,
     border: '1px solid ' + _utils.colors.gray,
     borderRadius: 3,
-    borderBox: 'content-box'
+    boxSizing: 'content-box'
   },
   checkboxContainerChecked: {
     background: _utils.colors.pictonBlue,
@@ -35,8 +35,7 @@ exports.default = {
     zIndex: 2,
     margin: 0,
     top: 0,
-    left: 0,
-    borderBox: 'content-box'
+    left: 0
   },
   checkboxStyleDisabled: {
     display: 'none'
@@ -53,7 +52,8 @@ exports.default = {
     MsTransform: 'rotate(45deg)',
     transform: 'rotate(45deg)',
     position: 'absolute',
-    zIndex: 1
+    zIndex: 1,
+    boxSizing: 'content-box'
   },
   spanCheckboxChecked: {
     borderColor: _utils.colors.lightGrey

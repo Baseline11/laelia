@@ -38,7 +38,9 @@ function PasswordContainer(_ref) {
       isHidden = _ref.isHidden,
       rules = _ref.rules,
       offSetRulesContainer = _ref.offSetRulesContainer,
-      rulesValidations = _ref.rulesValidations;
+      rulesValidations = _ref.rulesValidations,
+      inputName = _ref.inputName,
+      iconStyleOverride = _ref.iconStyleOverride;
 
   return _react2.default.createElement(
     'div',
@@ -48,7 +50,9 @@ function PasswordContainer(_ref) {
       placeholder: placeholder,
       wrapperStyleOverride: wrapperStyleOverride,
       handleOnChange: handleOnChange,
-      handleOnClickIcon: handleOnClickIcon
+      handleOnClickIcon: handleOnClickIcon,
+      inputName: inputName,
+      iconStyleOverride: iconStyleOverride
     }),
     _react2.default.createElement(_ListRules2.default, {
       rules: rules,
@@ -60,13 +64,15 @@ function PasswordContainer(_ref) {
 
 PasswordContainer.propTypes = {
   placeholder: _propTypes2.default.string,
+  inputName: _propTypes2.default.string,
   isHidden: _propTypes2.default.bool,
   rulesValidations: _propTypes2.default.object,
-  handleOnChange: _propTypes2.default.func.isRequired,
+  handleOnChange: _propTypes2.default.func,
   handleOnClickIcon: _propTypes2.default.func,
   wrapperStyleOverride: _propTypes2.default.object,
   rules: _propTypes2.default.array.isRequired,
-  offSetRulesContainer: _propTypes2.default.object
+  offSetRulesContainer: _propTypes2.default.object,
+  iconStyleOverride: _propTypes2.default.object
 };
 
 exports.default = (0, _radium2.default)(PasswordContainer);

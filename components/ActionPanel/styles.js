@@ -18,18 +18,21 @@ exports.default = {
     display: 'inline-block',
     minWidth: '100px',
     background: _utils.colors.white,
-    zIndex: 10
+    zIndex: 10,
+    padding: 0
   }),
   basePanelAction: _extends({}, _utils.fonts.baseText, {
     outline: 0,
     background: 'none',
     border: 'none',
     display: 'block',
-    padding: 0,
+    padding: 10,
     width: '100%',
     textAlign: 'left',
     color: 'rgba(0, 0, 0, .7)',
     margin: 'none',
+    textDecoration: 'none',
+    boxSizing: 'border-box',
     ':hover': {
       background: _utils.colors.pictonBlue,
       color: _utils.colors.white,
