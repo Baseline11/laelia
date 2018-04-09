@@ -12,9 +12,8 @@ exports.default = {
   tile: _extends({}, _utils.fonts.baseText, {
     width: '100%',
     background: _utils.colors.white,
-    padding: '40px 5px',
+    padding: '40px 20px',
     borderRadius: 5,
-    boxShadow: '0 0 10px 0 rgba(0, 0, 0, .3)',
     margin: 10
   })
 };
