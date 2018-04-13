@@ -42,3 +42,5 @@ export {default as UserRoles} from './components/UserRoles';
 export {default as PasswordInput} from './components/PasswordInput';
 export {default as ListRules} from './components/ListRules';
 export {default as PasswordContainer} from './components/PasswordContainer';
+export {default as NavigationCollapsed} from './components/NavigationCollapsed';
+

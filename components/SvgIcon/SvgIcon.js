@@ -64,7 +64,8 @@ var SvgIcon = function (_Component) {
       closeButton: _index.IconCloseButton,
       showPassword: _index.IconShowPassword,
       hidePassword: _index.IconHidePassword,
-      checkedArrow: _index.IconCheckedArrow
+      checkedArrow: _index.IconCheckedArrow,
+      logoImage: _index.LogoImage
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 

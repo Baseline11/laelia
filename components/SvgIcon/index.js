@@ -238,6 +238,15 @@ Object.defineProperty(exports, 'IconCheckedArrow', {
   }
 });
 
+var _LogoImage = require('./icons/LogoImage');
+
+Object.defineProperty(exports, 'LogoImage', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_LogoImage).default;
+  }
+});
+
 var _SvgIcon = require('./SvgIcon');
 
 Object.defineProperty(exports, 'SvgIcon', {
