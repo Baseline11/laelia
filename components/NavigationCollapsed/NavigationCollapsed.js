@@ -90,7 +90,7 @@ var NavigationCollapsed = function (_Component) {
             _react2.default.createElement(
               'div',
               {
-                style: [_styles2.default.submenuContainer, isVisible && _styles2.default.submenuContainerVisible, isVisibleMaster && _styles2.default.submenuContainerVisible, isSelected && _styles2.default.submenuContainerVisible]
+                style: [_styles2.default.submenuContainer, isVisible && _styles2.default.submenuContainerVisible]
               },
               _react2.default.createElement('span', { style: _styles2.default.leftArrow }),
               _react2.default.createElement(

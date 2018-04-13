@@ -11,7 +11,7 @@ var _utils = require('../../utils');
 exports.default = {
   leftMenuContainer: _extends({}, _utils.fonts.baseText, {
     display: 'inline-block',
-    position: 'relative',
+    position: 'fixed',
     width: 52,
     height: '100vh',
     backgroundColor: _utils.colors.darkGrey
@@ -19,8 +19,8 @@ exports.default = {
   submenuContainer: {
     display: 'none',
     position: 'absolute',
-    minWidth: 180,
-    left: 49,
+    minWidth: 220,
+    left: 48,
     top: 10,
     backgroundColor: _utils.colors.mineShaft
   },
@@ -30,11 +30,12 @@ exports.default = {
   submenuLink: {
     display: 'block',
     textDecoration: 'none',
-    padding: '8px 16px 8px 27px',
+    padding: '8px 27px 8px 27px',
     color: _utils.colors.dustyGray,
     fontSize: 14,
     textTransform: 'capitalize',
     cursor: 'pointer',
+    whiteSpace: 'nowrap',
     ':hover': {
       backgroundColor: _utils.colors.tundora,
       color: _utils.colors.white
@@ -43,7 +44,7 @@ exports.default = {
   submenuLinkHeader: {
     display: 'block',
     textDecoration: 'none',
-    padding: '12px 16px 12px 27px',
+    padding: '12px 27px 12px 27px',
     backgroundColor: _utils.colors.tundora,
     color: _utils.colors.white,
     fontWeight: 'bold',
@@ -89,19 +90,22 @@ exports.default = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    minWidth: 46,
+    minWidth: 44,
     padding: '20px 0px',
     cursor: 'pointer',
-    borderLeft: '3px solid ' + _utils.colors.darkGrey,
-    borderRight: '3px solid ' + _utils.colors.darkGrey,
+    borderLeft: '4px solid ' + _utils.colors.darkGrey,
+    borderRight: '4px solid ' + _utils.colors.darkGrey,
     ':hover': {
       backgroundColor: _utils.colors.mineShaft,
-      borderLeft: '3px solid ' + _utils.colors.pictonBlue
+      borderLeft: '4px solid ' + _utils.colors.pictonBlue,
+      borderRight: '4px solid ' + _utils.colors.mineShaft
     }
   },
   menuItemContainerVisible: {
     backgroundColor: _utils.colors.mineShaft,
-    borderLeft: '3px solid ' + _utils.colors.pictonBlue
+    borderLeft: '4px solid ' + _utils.colors.pictonBlue,
+    borderRight: '4px solid ' + _utils.colors.mineShaft
+
   },
   menuLogoArrow: {
     display: 'none',
