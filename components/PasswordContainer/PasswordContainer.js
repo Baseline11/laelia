@@ -37,14 +37,16 @@ function PasswordContainer(_ref) {
       wrapperStyleOverride = _ref.wrapperStyleOverride,
       isHidden = _ref.isHidden,
       rules = _ref.rules,
-      offSetRulesContainer = _ref.offSetRulesContainer,
+      listRulesStyleOverride = _ref.listRulesStyleOverride,
       rulesValidations = _ref.rulesValidations,
       inputName = _ref.inputName,
-      iconStyleOverride = _ref.iconStyleOverride;
+      iconStyleOverride = _ref.iconStyleOverride,
+      inputStyleOverride = _ref.inputStyleOverride,
+      containerStyleOverride = _ref.containerStyleOverride;
 
   return _react2.default.createElement(
     'div',
-    { style: [_styles2.default.passwordWrapper, wrapperStyleOverride] },
+    { style: [_styles2.default.passwordWrapper, containerStyleOverride] },
     _react2.default.createElement(_PasswordInput2.default, {
       isHidden: isHidden,
       placeholder: placeholder,
@@ -52,12 +54,13 @@ function PasswordContainer(_ref) {
       handleOnChange: handleOnChange,
       handleOnClickIcon: handleOnClickIcon,
       inputName: inputName,
-      iconStyleOverride: iconStyleOverride
+      iconStyleOverride: iconStyleOverride,
+      inputStyleOverride: inputStyleOverride
     }),
     _react2.default.createElement(_ListRules2.default, {
       rules: rules,
       rulesValidations: rulesValidations,
-      offsetRulesContainer: offSetRulesContainer
+      listRulesStyleOverride: listRulesStyleOverride
     })
   );
 }
@@ -69,9 +72,11 @@ PasswordContainer.propTypes = {
   rulesValidations: _propTypes2.default.object,
   handleOnChange: _propTypes2.default.func,
   handleOnClickIcon: _propTypes2.default.func,
+  containerStyleOverride: _propTypes2.default.object,
   wrapperStyleOverride: _propTypes2.default.object,
   rules: _propTypes2.default.array.isRequired,
-  offSetRulesContainer: _propTypes2.default.object,
+  listRulesStyleOverride: _propTypes2.default.object,
+  inputStyleOverride: _propTypes2.default.object,
   iconStyleOverride: _propTypes2.default.object
 };
 

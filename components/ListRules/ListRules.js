@@ -26,37 +26,47 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ListRules(_ref) {
   var rules = _ref.rules,
-      offsetRulesContainer = _ref.offsetRulesContainer,
+      listRulesStyleOverride = _ref.listRulesStyleOverride,
       rulesValidations = _ref.rulesValidations;
 
   return _react2.default.createElement(
-    'ul',
+    'div',
     {
-      style: [_styles2.default.rulesContainer, offsetRulesContainer, rulesValidations.rulesVisible && _styles2.default.showRulesContainer]
+      style: [_styles2.default.rulesContainerWrapper, listRulesStyleOverride, rulesValidations.rulesVisible && _styles2.default.showRulesContainer]
     },
-    rules.map(function (val) {
-      return _react2.default.createElement(
-        'li',
-        {
-          key: 'rule-' + val.key,
-          value: val.key,
-          style: [_styles2.default.listRulesItems]
-        },
-        '- ',
-        val.value,
-        _react2.default.createElement(
-          'span',
-          { key: 'hidePassSVG', style: [_styles2.default.svgIcon, rulesValidations[val.key] && _styles2.default.svgIconShow] },
-          _react2.default.createElement(_SvgIcon.SvgIcon, { icon: 'checkedArrow' })
-        )
-      );
-    })
+    _react2.default.createElement('span', { style: _styles2.default.topArrow }),
+    _react2.default.createElement(
+      'ul',
+      {
+        style: [_styles2.default.rulesContainer]
+      },
+      rules.map(function (val) {
+        return _react2.default.createElement(
+          'li',
+          {
+            key: 'rule-' + val.key,
+            value: val.key,
+            style: [_styles2.default.listRulesItems]
+          },
+          _react2.default.createElement(
+            'span',
+            { style: [_styles2.default.listRulesItemsContainer] },
+            val.value,
+            _react2.default.createElement(
+              'span',
+              { key: 'hidePassSVG', style: [_styles2.default.svgIcon, rulesValidations[val.key] && _styles2.default.svgIconShow] },
+              _react2.default.createElement(_SvgIcon.SvgIcon, { icon: 'checkedArrow' })
+            )
+          )
+        );
+      })
+    )
   );
 }
 
 ListRules.propTypes = {
   rules: _propTypes2.default.array.isRequired,
-  offsetRulesContainer: _propTypes2.default.object,
+  listRulesStyleOverride: _propTypes2.default.object,
   rulesValidations: _propTypes2.default.object
 };
 

@@ -35,7 +35,8 @@ function PasswordInput(_ref) {
       wrapperStyleOverride = _ref.wrapperStyleOverride,
       isHidden = _ref.isHidden,
       iconStyleOverride = _ref.iconStyleOverride,
-      inputName = _ref.inputName;
+      inputName = _ref.inputName,
+      inputStyleOverride = _ref.inputStyleOverride;
 
   var inputType = isHidden ? 'password' : 'text';
 
@@ -46,7 +47,8 @@ function PasswordInput(_ref) {
       placeholder: placeholder,
       inputType: inputType,
       handleOnChange: handleOnChange,
-      name: inputName
+      name: inputName,
+      inputStyleOverride: inputStyleOverride
     }),
     _react2.default.createElement(
       'span',
@@ -68,6 +70,7 @@ PasswordInput.propTypes = {
   handleOnChange: _propTypes2.default.func,
   handleOnClickIcon: _propTypes2.default.func,
   wrapperStyleOverride: _propTypes2.default.object,
+  inputStyleOverride: _propTypes2.default.object,
   iconStyleOverride: _propTypes2.default.object
 };
 

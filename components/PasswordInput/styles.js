@@ -17,7 +17,7 @@ exports.default = {
     position: 'absolute',
     width: 31,
     height: 30,
-    right: -10,
+    right: 0,
     top: 5,
     display: 'inline-block',
     ':hover': {
@@ -28,7 +28,7 @@ exports.default = {
     position: 'absolute',
     width: 27,
     height: 26,
-    right: -8,
+    right: 2,
     top: 7,
     display: 'inline-block',
     ':hover': {

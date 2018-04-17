@@ -14,6 +14,7 @@ exports.default = {
   },
   inputText: _extends({}, _utils.common.baseTextInput, {
     width: 'inherit',
+    borderRadius: 4,
     padding: 10
   }),
   texInputDisabled: _extends({}, _utils.common.disabledTextInput)

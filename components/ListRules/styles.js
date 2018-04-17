@@ -9,21 +9,23 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 var _utils = require('../../utils');
 
 exports.default = {
-  rulesContainer: _extends({}, _utils.fonts.baseText, {
+  rulesContainerWrapper: _extends({}, _utils.fonts.baseText, {
     margin: 0,
-    padding: '20px 50px 20px 20px',
+    position: 'relative',
+    padding: '20px 20px 10px 40px',
     width: 'inherit',
     border: '1px solid ' + _utils.colors.quillGray,
     background: _utils.colors.white,
-    listStyle: 'none',
     fontSize: 12,
     color: _utils.colors.gray,
-    position: 'absolute',
-    display: 'block',
-    top: 0,
     transition: 'opacity ease-in .4s',
-    opacity: 0
+    opacity: 0,
+    borderRadius: 4
   }),
+  rulesContainer: {
+    paddingLeft: 0,
+    margin: 0
+  },
   listRulesItems: {
     position: 'relative',
     marginBottom: 15
@@ -42,5 +44,23 @@ exports.default = {
   },
   svgIconShow: {
     opacity: 1
+  },
+  listRulesItemsContainer: {
+    marginLeft: -4
+  },
+  topArrow: {
+    backgroundColor: _utils.colors.white,
+    position: 'absolute',
+    top: -6,
+    left: 60,
+    width: 9,
+    height: 9,
+    borderColor: _utils.colors.dustyGray,
+    borderStyle: 'solid',
+    borderWidth: '0 1px 1px 0',
+    WebkitTransform: 'rotate(225deg)',
+    MsTransform: 'rotate(225deg)',
+    transform: 'rotate(225deg)',
+    boxSizing: 'content-box'
   }
 };
