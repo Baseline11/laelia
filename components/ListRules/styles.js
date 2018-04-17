@@ -18,9 +18,10 @@ exports.default = {
     background: _utils.colors.white,
     fontSize: 12,
     color: _utils.colors.gray,
-    transition: 'opacity ease-in .4s',
+    transition: 'all ease-in .4s',
     opacity: 0,
-    borderRadius: 4
+    borderRadius: 4,
+    display: 'none'
   }),
   rulesContainer: {
     paddingLeft: 0,
@@ -31,7 +32,8 @@ exports.default = {
     marginBottom: 15
   },
   showRulesContainer: {
-    opacity: 1
+    opacity: 1,
+    display: 'block'
   },
   svgIcon: {
     width: 26,
