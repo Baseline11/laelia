@@ -23,9 +23,9 @@ var _styles2 = _interopRequireDefault(_styles);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Select(_ref) {
-  var selectName = _ref.selectName,
-      selectedValue = _ref.selectedValue,
-      selectValues = _ref.selectValues,
+  var name = _ref.name,
+      defaultValue = _ref.defaultValue,
+      options = _ref.options,
       handleOnChange = _ref.handleOnChange,
       wrapperStyleOverride = _ref.wrapperStyleOverride;
 
@@ -34,12 +34,12 @@ function Select(_ref) {
     { style: [_styles2.default.inputWrapper, wrapperStyleOverride] },
     _react2.default.createElement(
       'select',
-      { name: selectName, onChange: handleOnChange, style: _styles2.default.selectList, defaultValue: selectedValue },
-      selectValues.map(function (val) {
+      { name: name, onChange: handleOnChange, style: _styles2.default.selectList, defaultValue: defaultValue },
+      options.map(function (option) {
         return _react2.default.createElement(
           'option',
-          { key: 'option-' + val.key, value: val.key },
-          val.value
+          { key: 'option-' + option.value, value: option.value },
+          option.label
         );
       })
     ),
@@ -52,10 +52,10 @@ function Select(_ref) {
 }
 
 Select.propTypes = {
-  selectName: _propTypes2.default.string,
-  selectedValue: _propTypes2.default.string.isRequired,
-  selectValues: _propTypes2.default.array.isRequired,
-  handleOnChange: _propTypes2.default.func.isRequired,
+  name: _propTypes2.default.string,
+  defaultValue: _propTypes2.default.string,
+  options: _propTypes2.default.array,
+  handleOnChange: _propTypes2.default.func,
   wrapperStyleOverride: _propTypes2.default.object
 };
 
