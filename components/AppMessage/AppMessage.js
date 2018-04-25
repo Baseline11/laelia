@@ -58,10 +58,12 @@ var AppMessage = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AppMessage.__proto__ || Object.getPrototypeOf(AppMessage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      open: true
-    }, _this.handleClose = function () {
-      _this.setState({ open: false });
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AppMessage.__proto__ || Object.getPrototypeOf(AppMessage)).call.apply(_ref, [this].concat(args))), _this), _this.handleClose = function (event, reason) {
+      if (reason === 'clickaway') {
+        return;
+      }
+
+      _this.props.onCloseRequest();
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -69,6 +71,7 @@ var AppMessage = function (_Component) {
     key: 'render',
     value: function render() {
       var _props = this.props,
+          open = _props.open,
           autoHide = _props.autoHide,
           classes = _props.classes,
           message = _props.message,
@@ -80,12 +83,12 @@ var AppMessage = function (_Component) {
           vertical: 'top',
           horizontal: 'right'
         },
-        open: this.state.open,
+        open: open,
         autoHideDuration: autoHide ? 3000 : null,
         onClose: this.handleClose,
         SnackbarContentProps: {
           classes: {
-            root: (0, _classnames2.default)(messageType === 'success' && classes.success, messageType === 'error' && classes.error)
+            root: (0, _classnames2.default)(classes.rwdOverride, messageType === 'success' && classes.success, messageType === 'error' && classes.error)
           }
         },
         message: _react2.default.createElement(
@@ -111,9 +114,11 @@ var AppMessage = function (_Component) {
 }(_react.Component);
 
 AppMessage.propTypes = {
+  open: _propTypes2.default.bool,
   autoHide: _propTypes2.default.bool,
   message: _propTypes2.default.string,
   messageType: _propTypes2.default.string,
+  onCloseRequest: _propTypes2.default.func,
   classes: _propTypes2.default.func.isRequired
 };
 

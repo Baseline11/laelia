@@ -27,12 +27,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function ListRules(_ref) {
   var rules = _ref.rules,
       listRulesStyleOverride = _ref.listRulesStyleOverride,
-      rulesValidations = _ref.rulesValidations;
+      rulesValidations = _ref.rulesValidations,
+      isVisible = _ref.isVisible;
 
   return _react2.default.createElement(
     'div',
     {
-      style: [_styles2.default.rulesContainerWrapper, listRulesStyleOverride, rulesValidations.rulesVisible && _styles2.default.showRulesContainer]
+      style: [_styles2.default.rulesContainerWrapper, listRulesStyleOverride, isVisible && _styles2.default.showRulesContainer]
     },
     _react2.default.createElement('span', { style: _styles2.default.topArrow }),
     _react2.default.createElement(
@@ -66,6 +67,7 @@ function ListRules(_ref) {
 
 ListRules.propTypes = {
   rules: _propTypes2.default.array.isRequired,
+  isVisible: _propTypes2.default.bool,
   listRulesStyleOverride: _propTypes2.default.object,
   rulesValidations: _propTypes2.default.object
 };

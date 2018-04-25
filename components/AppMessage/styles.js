@@ -17,5 +17,10 @@ exports.default = {
   },
   message: _extends({}, _utils.fonts.baseText, {
     color: _utils.colors.white
-  })
+  }),
+  rwdOverride: {
+    minWidth: 288,
+    maxWidth: 568,
+    flexGrow: 0
+  }
 };
