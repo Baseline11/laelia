@@ -63,7 +63,9 @@ var AppMessage = function (_Component) {
         return;
       }
 
-      _this.props.onCloseRequest();
+      if (_this.props.onCloseRequest) {
+        _this.props.onCloseRequest();
+      }
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -119,7 +121,7 @@ AppMessage.propTypes = {
   message: _propTypes2.default.string,
   messageType: _propTypes2.default.string,
   onCloseRequest: _propTypes2.default.func,
-  classes: _propTypes2.default.func.isRequired
+  classes: _propTypes2.default.object.isRequired
 };
 
 exports.default = (0, _styles.withStyles)(_styles3.default)(AppMessage);
