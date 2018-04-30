@@ -82,7 +82,9 @@ var ActionMenu = function (_Component) {
         _Menu.MenuItem,
         {
           key: item.text,
-          onClick: item.value,
+          onClick: function onClick() {
+            return _this.handleClickCombination(item.value);
+          },
           className: (0, _classnames2.default)(_this.props.classes.actionItem)
         },
         item.text
@@ -91,6 +93,12 @@ var ActionMenu = function (_Component) {
   }
 
   _createClass(ActionMenu, [{
+    key: 'handleClickCombination',
+    value: function handleClickCombination(action) {
+      action();
+      this.handleClose();
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
