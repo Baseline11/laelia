@@ -44,4 +44,5 @@ export {default as ListRules} from './components/ListRules';
 export {default as PasswordContainer} from './components/PasswordContainer';
 export {default as NavigationCollapsed} from './components/NavigationCollapsed';
 export {default as AppMessage} from './components/AppMessage';
+export {default as Tabs} from './components/Tabs';
 
