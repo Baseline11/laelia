@@ -65,7 +65,9 @@ var SvgIcon = function (_Component) {
       showPassword: _index.IconShowPassword,
       hidePassword: _index.IconHidePassword,
       checkedArrow: _index.IconCheckedArrow,
-      logoImage: _index.LogoImage
+      logoImage: _index.LogoImage,
+      backArrow: _index.BackArrow,
+      forwardArrow: _index.ForwardArrow
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 

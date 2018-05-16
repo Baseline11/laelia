@@ -37,7 +37,7 @@ export {default as IconApiGuide} from './components/SvgIcon/icons/ApiGuide';
 export {default as IconActionMore} from './components/SvgIcon/icons/ActionMore';
 export {default as CheckBox} from './components/CheckBox';
 export {default as SearchResultNumber} from './components/SearchResultNumber';
-export {default as LinkToUrl} from './components/LinkToUrl';
+export {default as NavigationButton} from './components/NavigationButton';
 export {default as UserRoles} from './components/UserRoles';
 export {default as PasswordInput} from './components/PasswordInput';
 export {default as ListRules} from './components/ListRules';

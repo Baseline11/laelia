@@ -247,6 +247,24 @@ Object.defineProperty(exports, 'LogoImage', {
   }
 });
 
+var _BackArrow = require('./icons/BackArrow');
+
+Object.defineProperty(exports, 'BackArrow', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_BackArrow).default;
+  }
+});
+
+var _ForwardArrow = require('./icons/ForwardArrow');
+
+Object.defineProperty(exports, 'ForwardArrow', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ForwardArrow).default;
+  }
+});
+
 var _SvgIcon = require('./SvgIcon');
 
 Object.defineProperty(exports, 'SvgIcon', {
