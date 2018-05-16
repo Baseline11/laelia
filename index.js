@@ -45,4 +45,7 @@ export {default as PasswordContainer} from './components/PasswordContainer';
 export {default as NavigationCollapsed} from './components/NavigationCollapsed';
 export {default as AppMessage} from './components/AppMessage';
 export {default as Tabs} from './components/Tabs';
+export {default as CounterIcon} from './components/CounterIcon';
+export {default as ProfilePicture} from './components/ProfilePicture';
+export {default as ProfilePictureContainer} from './components/ProfilePictureContainer';
 
