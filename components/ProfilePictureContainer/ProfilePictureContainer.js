@@ -20,6 +20,10 @@ var _CounterIcon = require('../CounterIcon');
 
 var _CounterIcon2 = _interopRequireDefault(_CounterIcon);
 
+var _ProfilePicture = require('../ProfilePicture');
+
+var _ProfilePicture2 = _interopRequireDefault(_ProfilePicture);
+
 var _styles = require('./styles');
 
 var _styles2 = _interopRequireDefault(_styles);
@@ -30,15 +34,17 @@ function ProfilePictureContainer(_ref) {
   var image = _ref.image,
       counter = _ref.counter,
       containerStyleOverride = _ref.containerStyleOverride,
+      imageContainerStyleOverride = _ref.imageContainerStyleOverride,
       imageStyleOverride = _ref.imageStyleOverride,
       counterIconStyleOverride = _ref.counterIconStyleOverride;
 
   return _react2.default.createElement(
     'div',
     { style: [_styles2.default.profilePictureContainer, containerStyleOverride] },
-    _react2.default.createElement('img', {
-      style: [_styles2.default.imageStyle, imageStyleOverride],
-      src: image
+    _react2.default.createElement(_ProfilePicture2.default, {
+      image: image,
+      containerStyleOverride: imageContainerStyleOverride,
+      imageStyleOverride: imageStyleOverride
     }),
     _react2.default.createElement(_CounterIcon2.default, { counter: counter, containerStyleOverride: counterIconStyleOverride })
   );
@@ -49,7 +55,8 @@ ProfilePictureContainer.propTypes = {
   counter: _propTypes2.default.number.isRequired,
   containerStyleOverride: _propTypes2.default.object,
   imageStyleOverride: _propTypes2.default.object,
-  counterIconStyleOverride: _propTypes2.default.object
+  counterIconStyleOverride: _propTypes2.default.object,
+  imageContainerStyleOverride: _propTypes2.default.object
 };
 
 exports.default = (0, _radium2.default)(ProfilePictureContainer);
