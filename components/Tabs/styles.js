@@ -41,12 +41,11 @@ exports.default = {
   secondaryTabWrapper: _extends({}, _utils.fonts.baseText, {
     display: 'flex',
     justifyContent: 'flex-start',
-    alignItems: 'stretch',
-    height: 80
+    alignItems: 'stretch'
   }),
   tabSecondaryStyle: {
-    flex: 1,
     height: 70,
+    padding: '0 30px',
     backgroundColor: _utils.colors.white,
     alignSelf: 'center',
     border: 'none',
@@ -70,11 +69,10 @@ exports.default = {
   tabSecondaryStyleSelected: {
     color: _utils.colors.white,
     backgroundColor: _utils.colors.dustyGray,
-    height: 80,
     paddingTop: 10,
     marginTop: -10,
     borderTopLeftRadius: 4,
-    borderTopRightRadius: 4
+    borderTopRightRadius: 4,
+    height: 80
   }
-
 };

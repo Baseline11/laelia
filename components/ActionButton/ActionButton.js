@@ -35,6 +35,7 @@ function ActionButton(_ref) {
     'button',
     {
       disabled: disabled,
+      type: 'button',
       style: [_styles2.default.baseAction, disabled && _styles2.default.disabled, styleOverride],
       onClick: action
     },
