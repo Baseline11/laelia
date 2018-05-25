@@ -43,7 +43,7 @@ function Note(_ref) {
 }
 
 Note.propTypes = {
-  data: _propTypes2.default.string,
+  data: _propTypes2.default.object,
   classes: _propTypes2.default.object
 };
 
