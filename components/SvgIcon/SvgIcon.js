@@ -67,7 +67,9 @@ var SvgIcon = function (_Component) {
       checkedArrow: _index.IconCheckedArrow,
       logoImage: _index.LogoImage,
       backArrow: _index.BackArrow,
-      forwardArrow: _index.ForwardArrow
+      forwardArrow: _index.ForwardArrow,
+      plusIcon: _index.PlusIcon,
+      minusIcon: _index.MinusIcon
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 

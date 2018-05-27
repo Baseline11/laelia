@@ -265,6 +265,24 @@ Object.defineProperty(exports, 'ForwardArrow', {
   }
 });
 
+var _PlusIcon = require('./icons/PlusIcon');
+
+Object.defineProperty(exports, 'PlusIcon', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_PlusIcon).default;
+  }
+});
+
+var _MinusIcon = require('./icons/MinusIcon');
+
+Object.defineProperty(exports, 'MinusIcon', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_MinusIcon).default;
+  }
+});
+
 var _SvgIcon = require('./SvgIcon');
 
 Object.defineProperty(exports, 'SvgIcon', {
