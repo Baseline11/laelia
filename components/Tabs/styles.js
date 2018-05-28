@@ -21,22 +21,25 @@ exports.default = {
     height: '100%',
     background: 'none',
     alignSelf: 'center',
-    border: 'none',
     cursor: 'pointer',
     fontSize: 18,
     textTransform: 'uppercase',
     fontWeight: 'bold',
     outline: 'none',
-    borderTop: '1px solid ' + _utils.colors.white,
+    borderColor: _utils.colors.white,
+    borderStyle: 'solid',
+    borderWidth: '2px 0px 0 0',
     color: _utils.colors.dustyGray,
     ':hover': {
       color: _utils.colors.pictonBlue,
-      borderTop: '1px solid ' + _utils.colors.pictonBlue
+      borderColor: _utils.colors.pictonBlue
     }
   },
   tabStyleSelected: {
     color: _utils.colors.pictonBlue,
-    borderTop: '2px solid ' + _utils.colors.pictonBlue
+    borderColor: _utils.colors.pictonBlue,
+    borderStyle: 'solid',
+    borderWidth: '2px 0px 0 0'
   },
   secondaryTabWrapper: _extends({}, _utils.fonts.baseText, {
     display: 'flex',
@@ -60,7 +63,7 @@ exports.default = {
       color: _utils.colors.white,
       backgroundColor: _utils.colors.dustyGray,
       height: 80,
-      padding: '10px 0 30px',
+      padding: '10px 30px 0 ',
       margin: '-10px 2px 0',
       borderTopLeftRadius: 4,
       borderTopRightRadius: 4
@@ -69,7 +72,7 @@ exports.default = {
   tabSecondaryStyleSelected: {
     color: _utils.colors.white,
     backgroundColor: _utils.colors.dustyGray,
-    padding: '10px 0 30px',
+    padding: '10px 30px 0',
     margin: '-10px 2px 0',
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
