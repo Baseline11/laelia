@@ -56,14 +56,14 @@ exports.default = {
     textTransform: 'uppercase',
     fontWeight: 'bold',
     outline: 'none',
-    margin: '0 2px 0',
+    margin: '0 2px 0 0',
     color: _utils.colors.dustyGray,
     ':hover': {
       color: _utils.colors.white,
       backgroundColor: _utils.colors.dustyGray,
       height: 80,
       padding: '10px 30px 0 ',
-      margin: '-10px 2px 0',
+      margin: '-10px 2px 0 0',
       borderTopLeftRadius: 4,
       borderTopRightRadius: 4
     }
@@ -72,7 +72,7 @@ exports.default = {
     color: _utils.colors.white,
     backgroundColor: _utils.colors.dustyGray,
     padding: '10px 30px 0',
-    margin: '-10px 2px 0',
+    margin: '-10px 2px 0 0',
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
     height: 80
