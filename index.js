@@ -51,4 +51,5 @@ export {default as CounterIcon} from './components/CounterIcon';
 export {default as ProfilePicture} from './components/ProfilePicture';
 export {default as ProfilePictureContainer} from './components/ProfilePictureContainer';
 export {default as Note} from './components/Note';
+export {default as Pagination} from './components/Pagination';
 
