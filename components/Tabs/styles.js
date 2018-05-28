@@ -13,22 +13,21 @@ exports.default = {
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'stretch',
-    height: 100,
-    borderBottom: '2px solid ' + _utils.colors.silver
+    borderBottom: '1px solid ' + _utils.colors.gallery
   }),
   tabStyle: {
     flex: 1,
-    height: '100%',
     background: 'none',
     alignSelf: 'center',
     cursor: 'pointer',
-    fontSize: 18,
+    fontSize: 14,
     textTransform: 'uppercase',
     fontWeight: 'bold',
     outline: 'none',
     borderColor: _utils.colors.white,
     borderStyle: 'solid',
     borderWidth: '2px 0px 0 0',
+    padding: 15,
     color: _utils.colors.dustyGray,
     ':hover': {
       color: _utils.colors.pictonBlue,
