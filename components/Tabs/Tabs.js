@@ -43,7 +43,9 @@ function Tab(_ref) {
         {
           key: 'button-' + index,
           name: tab.value,
-          onClick: handleOnClick(tab.value),
+          onClick: function onClick() {
+            return handleOnClick(tab.value);
+          },
           style: [styleClass, selectedTab === tab.value && styleSelectedClass, tabStyleOverride]
         },
         tab.label
