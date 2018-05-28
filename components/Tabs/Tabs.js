@@ -42,10 +42,11 @@ function Tab(_ref) {
         'button',
         {
           key: 'button-' + index,
-          onClick: handleOnClick,
-          style: [styleClass, selectedTab === tab && styleSelectedClass, tabStyleOverride]
+          name: tab.value,
+          onClick: handleOnClick(tab.value),
+          style: [styleClass, selectedTab === tab.value && styleSelectedClass, tabStyleOverride]
         },
-        tab
+        tab.label
       );
     })
   );

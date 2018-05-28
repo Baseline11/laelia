@@ -16,6 +16,7 @@ exports.default = {
   silver: '#bbb',
   quillGray: '#dbdbd9',
   mercury: '#e6e6e6',
+  gallery: '#eee',
   lightGrey: '#f0f0f0',
   white: '#fff',
   cornflowerBlue: '#6195ed',
