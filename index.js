@@ -35,6 +35,8 @@ export {default as IconWhatsNew} from './components/SvgIcon/icons/WhatsNew';
 export {default as IconExternalLink} from './components/SvgIcon/icons/ExternalLink';
 export {default as IconApiGuide} from './components/SvgIcon/icons/ApiGuide';
 export {default as IconActionMore} from './components/SvgIcon/icons/ActionMore';
+export {default as PlusIcon} from './components/SvgIcon/icons/PlusIcon';
+export {default as MinusIcon} from './components/SvgIcon/icons/MinusIcon';
 export {default as CheckBox} from './components/CheckBox';
 export {default as SearchResultNumber} from './components/SearchResultNumber';
 export {default as NavigationButton} from './components/NavigationButton';
