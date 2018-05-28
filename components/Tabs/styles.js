@@ -27,11 +27,11 @@ exports.default = {
     textTransform: 'uppercase',
     fontWeight: 'bold',
     outline: 'none',
-    borderTop: '2px solid ' + _utils.colors.white,
+    borderTop: '1px solid ' + _utils.colors.white,
     color: _utils.colors.dustyGray,
     ':hover': {
       color: _utils.colors.pictonBlue,
-      borderTop: '2px solid ' + _utils.colors.pictonBlue
+      borderTop: '1px solid ' + _utils.colors.pictonBlue
     }
   },
   tabStyleSelected: {
@@ -54,14 +54,14 @@ exports.default = {
     textTransform: 'uppercase',
     fontWeight: 'bold',
     outline: 'none',
-    marginRight: 2,
+    margin: '0 2px 0',
     color: _utils.colors.dustyGray,
     ':hover': {
       color: _utils.colors.white,
       backgroundColor: _utils.colors.dustyGray,
       height: 80,
-      paddingTop: 10,
-      marginTop: -10,
+      padding: '10px 0 30px',
+      margin: '-10px 2px 0',
       borderTopLeftRadius: 4,
       borderTopRightRadius: 4
     }
@@ -69,8 +69,8 @@ exports.default = {
   tabSecondaryStyleSelected: {
     color: _utils.colors.white,
     backgroundColor: _utils.colors.dustyGray,
-    paddingTop: 10,
-    marginTop: -10,
+    padding: '10px 0 30px',
+    margin: '-10px 2px 0',
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
     height: 80
