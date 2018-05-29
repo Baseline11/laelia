@@ -62,8 +62,8 @@ exports.default = {
       color: _utils.colors.white,
       backgroundColor: _utils.colors.dustyGray,
       height: 45,
-      padding: '10px 20px 0 ',
-      margin: '-10px 2px 0 0',
+      padding: '5px 20px 0 ',
+      margin: '-5px 2px 0 0',
       borderTopLeftRadius: 4,
       borderTopRightRadius: 4
     }
@@ -71,8 +71,8 @@ exports.default = {
   tabSecondaryStyleSelected: {
     color: _utils.colors.white,
     backgroundColor: _utils.colors.dustyGray,
-    padding: '10px 20px 0',
-    margin: '-10px 2px 0 0',
+    padding: '5px 20px 0',
+    margin: '-5px 2px 0 0',
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
     height: 45
