@@ -100,8 +100,8 @@ var Pagination = function (_Component) {
           return handlePageOnClick(pageIndex);
         };
       };
-      var onLimiterChangeHandler = function onLimiterChangeHandler(limitValue) {
-        return handleLimiterOnChange(limitValue);
+      var onLimiterChangeHandler = function onLimiterChangeHandler(e) {
+        return handleLimiterOnChange(e.target.value);
       };
 
       return _react2.default.createElement(
@@ -123,7 +123,7 @@ var Pagination = function (_Component) {
               { style: _styles2.default.paginationLimiterDropdownWrapper },
               _react2.default.createElement(_index.Select, {
                 options: limiterOptions,
-                defaultValue: (0, _lodash.find)(limiterOptions, ['value', limit]).value,
+                defaultValue: (0, _lodash.find)(limiterOptions, ['value', limit]).value.toString(),
                 handleOnChange: onLimiterChangeHandler
               })
             ),
