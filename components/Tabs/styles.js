@@ -46,13 +46,13 @@ exports.default = {
     alignItems: 'stretch'
   }),
   tabSecondaryStyle: {
-    height: 70,
-    padding: '0 30px',
+    height: 40,
+    padding: '0 20px',
     backgroundColor: _utils.colors.white,
     alignSelf: 'center',
     border: 'none',
     cursor: 'pointer',
-    fontSize: 18,
+    fontSize: 14,
     textTransform: 'uppercase',
     fontWeight: 'bold',
     outline: 'none',
@@ -61,8 +61,8 @@ exports.default = {
     ':hover': {
       color: _utils.colors.white,
       backgroundColor: _utils.colors.dustyGray,
-      height: 80,
-      padding: '10px 30px 0 ',
+      height: 45,
+      padding: '10px 20px 0 ',
       margin: '-10px 2px 0 0',
       borderTopLeftRadius: 4,
       borderTopRightRadius: 4
@@ -71,10 +71,10 @@ exports.default = {
   tabSecondaryStyleSelected: {
     color: _utils.colors.white,
     backgroundColor: _utils.colors.dustyGray,
-    padding: '10px 30px 0',
+    padding: '10px 20px 0',
     margin: '-10px 2px 0 0',
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
-    height: 80
+    height: 45
   }
 };
