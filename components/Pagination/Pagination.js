@@ -123,7 +123,7 @@ var Pagination = function (_Component) {
               { style: _styles2.default.paginationLimiterDropdownWrapper },
               _react2.default.createElement(_index.Select, {
                 options: limiterOptions,
-                defaultValue: (0, _lodash.find)(limiterOptions, ['value', limit]),
+                defaultValue: (0, _lodash.find)(limiterOptions, ['value', limit]).value,
                 handleOnChange: onLimiterChangeHandler
               })
             ),
