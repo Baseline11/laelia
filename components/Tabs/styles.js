@@ -18,7 +18,7 @@ exports.default = {
   tabStyle: {
     flex: 1,
     background: 'none',
-    alignSelf: 'center',
+    alignSelf: 'stretch',
     cursor: 'pointer',
     fontSize: 14,
     textTransform: 'uppercase',
