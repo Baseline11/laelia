@@ -24,21 +24,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ProfilePicture(_ref) {
   var image = _ref.image,
+      text = _ref.text,
       containerStyleOverride = _ref.containerStyleOverride,
       imageStyleOverride = _ref.imageStyleOverride;
 
   return _react2.default.createElement(
     'div',
-    { style: [_styles2.default.profilePictureContainer, containerStyleOverride] },
-    _react2.default.createElement('img', {
+    { style: [_styles2.default.profilePictureContainer, containerStyleOverride, text && _styles2.default.profileTextStyle] },
+    image ? _react2.default.createElement('img', {
       style: [_styles2.default.imageStyle, imageStyleOverride],
       src: image
-    })
+    }) : _react2.default.createElement(
+      'span',
+      null,
+      text
+    )
   );
 }
 
 ProfilePicture.propTypes = {
-  image: _propTypes2.default.string.isRequired,
+  image: _propTypes2.default.string,
+  text: _propTypes2.default.string,
   containerStyleOverride: _propTypes2.default.object,
   imageStyleOverride: _propTypes2.default.object
 };

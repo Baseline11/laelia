@@ -32,6 +32,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ProfilePictureContainer(_ref) {
   var image = _ref.image,
+      text = _ref.text,
       counter = _ref.counter,
       containerStyleOverride = _ref.containerStyleOverride,
       imageContainerStyleOverride = _ref.imageContainerStyleOverride,
@@ -43,6 +44,7 @@ function ProfilePictureContainer(_ref) {
     { style: [_styles2.default.profilePictureContainer, containerStyleOverride] },
     _react2.default.createElement(_ProfilePicture2.default, {
       image: image,
+      text: text,
       containerStyleOverride: imageContainerStyleOverride,
       imageStyleOverride: imageStyleOverride
     }),
@@ -51,7 +53,8 @@ function ProfilePictureContainer(_ref) {
 }
 
 ProfilePictureContainer.propTypes = {
-  image: _propTypes2.default.string.isRequired,
+  image: _propTypes2.default.string,
+  text: _propTypes2.default.string,
   counter: _propTypes2.default.number.isRequired,
   containerStyleOverride: _propTypes2.default.object,
   imageStyleOverride: _propTypes2.default.object,
