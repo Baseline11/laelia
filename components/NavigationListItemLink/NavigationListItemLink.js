@@ -12,9 +12,15 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _List = require('material-ui/List');
+var _ListItem = require('@material-ui/core/ListItem');
 
-var _styles = require('material-ui/styles');
+var _ListItem2 = _interopRequireDefault(_ListItem);
+
+var _ListItemText = require('@material-ui/core/ListItemText');
+
+var _ListItemText2 = _interopRequireDefault(_ListItemText);
+
+var _styles = require('@material-ui/core/styles');
 
 var _classnames = require('classnames');
 
@@ -35,7 +41,7 @@ function NavigationListItemLink(_ref) {
       children = _ref.children;
 
   return _react2.default.createElement(
-    _List.ListItem,
+    _ListItem2.default,
     {
       button: true,
       component: 'a',
@@ -43,7 +49,7 @@ function NavigationListItemLink(_ref) {
       className: (0, _classnames2.default)(isNested && classes.nested, isSelected && !isNested && classes.selected, isNested && isSelected && classes.nestedSelected)
     },
     children,
-    _react2.default.createElement(_List.ListItemText, {
+    _react2.default.createElement(_ListItemText2.default, {
       primary: text,
       classes: { primary: (0, _classnames2.default)(classes.navItem, isSelected && classes.navItemSelected) }
     })

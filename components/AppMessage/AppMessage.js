@@ -14,19 +14,19 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _IconButton = require('material-ui/IconButton');
+var _IconButton = require('@material-ui/core/IconButton');
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _Close = require('material-ui-icons/Close');
+var _Close = require('@material-ui/icons/Close');
 
 var _Close2 = _interopRequireDefault(_Close);
 
-var _Snackbar = require('material-ui/Snackbar');
+var _Snackbar = require('@material-ui/core/Snackbar');
 
 var _Snackbar2 = _interopRequireDefault(_Snackbar);
 
-var _styles = require('material-ui/styles');
+var _styles = require('@material-ui/core/styles');
 
 var _classnames = require('classnames');
 
@@ -88,7 +88,7 @@ var AppMessage = function (_Component) {
         open: open,
         autoHideDuration: autoHide ? 3000 : null,
         onClose: this.handleClose,
-        SnackbarContentProps: {
+        ContentProps: {
           classes: {
             root: (0, _classnames2.default)(classes.rwdOverride, messageType === 'success' && classes.success, messageType === 'error' && classes.error)
           }

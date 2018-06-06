@@ -14,21 +14,27 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Collapse = require('material-ui/transitions/Collapse');
+var _Collapse = require('@material-ui/core/Collapse');
 
 var _Collapse2 = _interopRequireDefault(_Collapse);
 
-var _List = require('material-ui/List');
+var _ListItem = require('@material-ui/core/ListItem');
 
-var _ExpandMore = require('material-ui-icons/ExpandMore');
+var _ListItem2 = _interopRequireDefault(_ListItem);
+
+var _ListItemText = require('@material-ui/core/ListItemText');
+
+var _ListItemText2 = _interopRequireDefault(_ListItemText);
+
+var _ExpandMore = require('@material-ui/icons/ExpandMore');
 
 var _ExpandMore2 = _interopRequireDefault(_ExpandMore);
 
-var _ExpandLess = require('material-ui-icons/ExpandLess');
+var _ExpandLess = require('@material-ui/icons//ExpandLess');
 
 var _ExpandLess2 = _interopRequireDefault(_ExpandLess);
 
-var _styles = require('material-ui/styles');
+var _styles = require('@material-ui/core/styles');
 
 var _classnames = require('classnames');
 
@@ -83,10 +89,10 @@ var NavigationListItemExpandable = function (_Component) {
         _react.Fragment,
         null,
         _react2.default.createElement(
-          _List.ListItem,
+          _ListItem2.default,
           { button: true, onClick: this.handleClick, className: (0, _classnames2.default)(isSelected && classes.selected) },
           mainItemIcon && mainItemIcon,
-          _react2.default.createElement(_List.ListItemText, {
+          _react2.default.createElement(_ListItemText2.default, {
             primary: mainItemText,
             classes: { primary: (0, _classnames2.default)(classes.navItem, isSelected && classes.navItemSelected) }
           }),

@@ -18,19 +18,23 @@ var _find = require('lodash/find');
 
 var _find2 = _interopRequireDefault(_find);
 
-var _Divider = require('material-ui/Divider');
+var _Divider = require('@material-ui/core/Divider');
 
 var _Divider2 = _interopRequireDefault(_Divider);
 
-var _Drawer = require('material-ui/Drawer');
+var _Drawer = require('@material-ui/core/Drawer');
 
 var _Drawer2 = _interopRequireDefault(_Drawer);
 
-var _List = require('material-ui/List');
+var _List = require('@material-ui/core/List');
 
 var _List2 = _interopRequireDefault(_List);
 
-var _styles = require('material-ui/styles');
+var _ListItemIcon = require('@material-ui/core/ListItemIcon');
+
+var _ListItemIcon2 = _interopRequireDefault(_ListItemIcon);
+
+var _styles = require('@material-ui/core/styles');
 
 var _classnames = require('classnames');
 
@@ -85,7 +89,7 @@ var Navigation = function (_Component) {
           isSelected: !!selectedItem,
           mainItemText: data.label,
           mainItemIcon: data.icon && _react2.default.createElement(
-            _List.ListItemIcon,
+            _ListItemIcon2.default,
             null,
             _react2.default.createElement(_SvgIcon.SvgIcon, { icon: data.icon, fill: !!selectedItem ? _utils.colors.lightGrey : _utils.colors.dustyGray })
           )
@@ -168,7 +172,7 @@ var Navigation = function (_Component) {
                     isSelected: isSelected
                   },
                   item.icon && _react2.default.createElement(
-                    _List.ListItemIcon,
+                    _ListItemIcon2.default,
                     null,
                     _react2.default.createElement(_SvgIcon.SvgIcon, { icon: item.icon, fill: isSelected ? _utils.colors.lightGrey : _utils.colors.dustyGray })
                   )

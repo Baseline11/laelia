@@ -14,19 +14,23 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Menu = require('material-ui/Menu');
+var _Menu = require('@material-ui/core/Menu');
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _IconButton = require('material-ui/IconButton');
+var _MenuItem = require('@material-ui/core/MenuItem');
+
+var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
+var _IconButton = require('@material-ui/core/IconButton');
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _MoreHoriz = require('material-ui-icons/MoreHoriz');
+var _MoreHoriz = require('@material-ui/icons/MoreHoriz');
 
 var _MoreHoriz2 = _interopRequireDefault(_MoreHoriz);
 
-var _styles = require('material-ui/styles');
+var _styles = require('@material-ui/core/styles');
 
 var _classnames = require('classnames');
 
@@ -66,7 +70,7 @@ var ActionMenu = function (_Component) {
       _this.setState({ anchorEl: null });
     }, _this.renderLinkItem = function (item) {
       return _react2.default.createElement(
-        _Menu.MenuItem,
+        _MenuItem2.default,
         {
           key: item.text,
           className: (0, _classnames2.default)(_this.props.classes.actionItem)
@@ -79,7 +83,7 @@ var ActionMenu = function (_Component) {
       );
     }, _this.renderActionItem = function (item) {
       return _react2.default.createElement(
-        _Menu.MenuItem,
+        _MenuItem2.default,
         {
           key: item.text,
           onClick: function onClick() {
@@ -113,6 +117,7 @@ var ActionMenu = function (_Component) {
         _react2.default.createElement(
           _IconButton2.default,
           {
+            'aria-owns': anchorEl ? 'ActionMenu' : null,
             'aria-label': 'More',
             'aria-haspopup': 'true',
             onClick: this.handleClick
@@ -122,6 +127,7 @@ var ActionMenu = function (_Component) {
         _react2.default.createElement(
           _Menu2.default,
           {
+            id: 'ActionMenu',
             anchorEl: anchorEl,
             open: Boolean(anchorEl),
             onClose: this.handleClose,

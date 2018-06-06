@@ -12,9 +12,11 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _materialUi = require('material-ui');
+var _Paper = require('@material-ui/core/Paper');
 
-var _styles = require('material-ui/styles');
+var _Paper2 = _interopRequireDefault(_Paper);
+
+var _styles = require('@material-ui/core/styles');
 
 var _styles2 = require('./styles');
 
@@ -27,7 +29,7 @@ function Note(_ref) {
       classes = _ref.classes;
 
   return _react2.default.createElement(
-    _materialUi.Paper,
+    _Paper2.default,
     { className: classes.root, elevation: 4 },
     _react2.default.createElement(
       'p',
